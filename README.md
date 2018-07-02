@@ -102,3 +102,10 @@ The PBIs were ordered such that we could satisfy the stakeholder's bare minimum 
 
 #### Statements on Estimation:
 Only development team members have participated in creating estimations for the PBIs.  We used the planning poker tool at planningpoker.com to reach consensus on the estimates.
+
+# Sprint 1 - Due July 5th @ 3pm
+
+Forcast of Story points: 24
+Rational for Story points: This is foundational work that will help us understand how fast we can go.
+
+
