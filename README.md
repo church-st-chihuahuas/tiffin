@@ -95,7 +95,7 @@ The product is a mobile and web-based tool for building community by making trus
 
 
 #### GitHub Repo
-https://github.com/melonistic/church-st-chihuahuas
+https://github.com/melonistic/tiffin
 
 #### Rationale for Ordering PBIs
 The PBIs were ordered such that we could satisfy the stakeholder's bare minimum requirements for her product vision.  In other words, the product has to, at a minimum, enable trusted connections between chefs and clients by allowing them to post and edit information about themselves, their abilities, and desires.  Then, it has to enable clients to place orders.  Then, it has to enable chefs and clients to review each other.  Then, it has to enable automated payments through the application.  Finally, it needs to enable special orders and event catering once we have demonstrated the most basic functionality.
