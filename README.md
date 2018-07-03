@@ -105,7 +105,8 @@ Only development team members have participated in creating estimations for the 
 
 # Sprint 1 - Due July 5th @ 3pm
 
-Forcast of Story points: 24
-Rational for Story points: This is foundational work that will help us understand how fast we can go.
+Forecast of Velocity: 24 Story Points per Sprint
+Rationale for Velocity: This is foundational work that will help us understand how fast we can go.
+Half-velocity is 12 Story Points; all stories are less than 12 Story Points
 
 
