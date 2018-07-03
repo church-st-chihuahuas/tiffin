@@ -1,0 +1,12 @@
+%h1 Login
+%p Find me in app/views/sessions/new.html.haml
+
+= form_for '/login', url: '/login', method: :post do |form|
+  = form.label :login, class: :required
+  = form.text_field :login, class: :focus
+  %br
+  = form.label :password, class: :required
+  = form.password_field :password, class: :focus
+  %br
+  = form.submit 'Submit', class: 'btn btn-primary',
+          data: { confirm: 'Are you sure?' }
