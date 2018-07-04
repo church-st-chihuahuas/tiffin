@@ -9,7 +9,8 @@ class User < ApplicationRecord
             # , uniqueness: true
 
   validates :password,
-            presence: true
+            presence: true,
+            confirmation: true
 
   validates :role,
             presence: true
