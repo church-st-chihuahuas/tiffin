@@ -27,6 +27,20 @@ describe User do
     it { is_expected.to_not be_valid }
   end
 
+  describe '#authenticate' do
+
+    context 'when password is valid' do
+      subject {user.authenticate("hello")}
+
+      it { is_expected.to be_truthy }
+    end
+
+    context 'when password is invalid' do
+      subject {user.authenticate("goodbye")}
+      it { is_expected.to be_falsey }
+    end
+  end
+
 end
 
 
