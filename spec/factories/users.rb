@@ -1,6 +1,15 @@
 FactoryBot.define do
   factory :user do
+    first_name 'San'
+    password "oooo"
+    email 'santiago@dd.com'
+  end
+end
 
+
+
+
+=begin
     first_name
     last_name
     email
@@ -29,7 +38,4 @@ FactoryBot.define do
       is_active false
       deleted_at Time.current
     end
-
-  end
-end
-
+=end
