@@ -16,8 +16,15 @@ describe User do
     it { should define_enum_for(:role)}
     it { is_expected.to validate_presence_of(:first_name) }
     it { is_expected.to validate_presence_of(:last_name) }
+    it { is_expected.to validate_presence_of(:contact_phone) }
+    it { is_expected.to validate_presence_of(:street_address) }
+    it { is_expected.to validate_presence_of(:city) }
+    it { is_expected.to validate_presence_of(:state) }
+    it { is_expected.to validate_presence_of(:zip_code) }
   end
 
+  # we need to look at this test and figure out
+  # why it's passing when we think it should fail
   context 'when email address is already taken' do
     before do
       user_with_same_email = user.dup
@@ -42,9 +49,6 @@ describe User do
   end
 
 end
-
-
-
 
 
 

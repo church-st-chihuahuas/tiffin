@@ -5,9 +5,13 @@ FactoryBot.define do
     password 'hello'
     email 'handle@tiffin.com'
     role 'client'
+    contact_phone '555-555-1212'
+    street_address '1001 Mass Ave.'
+    city 'Cambridge'
+    state 'MA'
+    zip_code '02138'
   end
 end
-
 
 
 
