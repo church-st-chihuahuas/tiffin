@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe User do
 
-  let(:user) {FactoryBot.build(:user)}
+  let(:user) {FactoryBot.create(:user)}
   subject {user}
 
   describe 'associations' do
@@ -16,6 +16,15 @@ describe User do
     it { should define_enum_for(:role)}
     it { is_expected.to validate_presence_of(:first_name) }
     it { is_expected.to validate_presence_of(:last_name) }
+  end
+
+  context 'when email address is already taken' do
+    before do
+      user_with_same_email = user.dup
+      user_with_same_email.save
+    end
+
+    it { is_expected.to_not be_valid }
   end
 
 end

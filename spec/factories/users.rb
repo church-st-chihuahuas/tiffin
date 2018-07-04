@@ -1,6 +1,7 @@
 FactoryBot.define do
   factory :user do
     first_name 'Anupama'
+    last_name 'Mustermann'
     password 'hello'
     email 'handle@tiffin.com'
     role 'client'
