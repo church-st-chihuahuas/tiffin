@@ -12,7 +12,14 @@ class User < ApplicationRecord
   validates :role,
             presence: true
 
+
   enum role: [:client, :chef]
+
+  validates :first_name,
+            presence: true
+
+  validates :last_name,
+            presence: true
 
   def authenticate(password)
     password == self.password
