@@ -105,7 +105,7 @@ Only development team members have participated in creating estimations for the 
 
 # Sprint 1 - Due July 5th @ 3pm
 
-Daily Scrum Held on July 2nd at 2:55pm and July 3rd at 3:00pm; Members recounted their actions over the past 24 hours, what they planned to do over the next 24 hours, and discussed impediments
+Daily Scrum Held on July 2nd at 2:55pm, July 3rd at 3:00pm, and July 4th at 10:30; Members recounted their actions over the past 24 hours, what they planned to do over the next 24 hours, and discussed impediments.
 
 Forecast of Velocity: 24 Story Points per Sprint
 
@@ -113,6 +113,8 @@ Rationale for Velocity: This is foundational work that will help us understand h
 
 Half-velocity is 12 Story Points; all stories are less than 12 Story Points.
 
+
 Sprint Burndown Chart:  https://docs.google.com/spreadsheets/d/1SVE2uY-h8r7OMYG0ia_5_TnMiQMErTgjWkkk6Y9zels/edit#gid=0
+
 
 
