@@ -3,10 +3,11 @@ class User < ApplicationRecord
             presence: true,
             format: {
                 with: /\A[^@\s]+@[^@\s]+\z/,
-                message: 'does not appear to be a valid email address',
+                message: 'does not appear to be a valid email address'
+            },
+            uniqueness: {
+                case_sensitive: false
             }
-            # this is related to the test for email dups
-            # , uniqueness: true
 
   validates :password,
             presence: true,
@@ -16,7 +17,7 @@ class User < ApplicationRecord
             presence: true
 
 
-  enum role: [:client, :chef]
+  enum role: {client: 'client', chef: 'chef'}
 
   validates :first_name,
             presence: true
