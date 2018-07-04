@@ -3,6 +3,7 @@ FactoryBot.define do
     first_name 'Anupama'
     password 'hello'
     email 'handle@tiffin.com'
+    role 'client'
   end
 end
 
