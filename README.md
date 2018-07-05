@@ -7,10 +7,10 @@ Church St. Chihuahuas
 
 Member | Role
 -------| ----
-Andrew        | Product Owner
-Samir         |   Team Member 
+Andrew        |  Product Owner
+Samir         |  Team Member
 Eric          |  Scrum Master
-Christopher   |     Team Member
+Christopher   |  Team Member
 Santiago      |  Team Member
 
 ## Project Info
@@ -117,7 +117,7 @@ July 2:
 
 - Christopher - [last 24] , [next 24] Setup tools for development environment. Ruby/Rails tutorials. , [impediments] Getting started with dev environment;
 
-- Santiago - [last 24] , [next 24] , [impediments] ;
+- Santiago - [last 24] Prepare for sprint , [next 24] Scaffolding and getting a rails App up and committed to git, [impediments] Predicted that mismatches of development environment may cause problems for setting up team member's dev environment ;
 
 July 3:
 
@@ -129,7 +129,7 @@ July 3:
 
 - Christopher - [last 24] Setup app on local machine. Decided product architecture , [next 24] Create wireframes for login story, [impediments] Still learning application framework;
 
-- Santiago - [last 24] , [next 24] , [impediments] ;
+- Santiago - [last 24] Rails app, up and running, provided instructions to the team, Relieved that teammates stepped up, [next 24] show the team how to use Rspec, and how to do validations in activerecord rails helped setup views, [impediments] FactoryBots for Rspec unit testing are not working;
 
 
 July 4:
@@ -142,7 +142,7 @@ July 4:
 
 - Christopher - [last 24] Create wireframes for the login story and mob programmed the beginning of the login and create user stories, [next 24] Mob program the remaining login items, Continue to refine UI ahead of sprint review, [impediments] None;
 
-- Santiago - [last 24] , [next 24] , [impediments] ;
+- Santiago - [last 24] FactoryBots working!!! (Relieved!), [next 24] Mob the implementation of the Chef model, controller, and views; Back end for the logout and verify the login works as expected [impediments] Concern with the flash messages;
 
 
 July 5: 
@@ -155,7 +155,7 @@ July 5:
 
 - Christopher - [last 24] , [next 24] , [impediments] ;
 
-- Santiago - [last 24] , [next 24] , [impediments] ;
+- Santiago - [last 24] During mob programming, introduced controllers and model rails generators to the team, reviewed activerecord enum, which provides wonderful DSLs. [next 24] learn about feature testing; figure out better ways to impart knowledge on Rails to the team, [impediments] flash messages not working ;
 
 
 Forecast of Velocity: 24 Story Points per Sprint
