@@ -8,10 +8,9 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       if user.chef?
         redirect_to chef_home_path
+      else
+        redirect_to user_home_path, notice: 'Success!'
       end
-
-      redirect_to user_home_path, notice: 'Success!'
-
     else
       # Create an error message.
       render 'new', alert: 'failed'
