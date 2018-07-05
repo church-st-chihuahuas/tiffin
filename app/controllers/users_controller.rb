@@ -1,18 +1,20 @@
 class UsersController < ApplicationController
 
   def new
-
+    @user = User.new
   end
 
   def create
     @user = User.new(user_params)
-    @user.save
-    if @user.client?
-      redirect_to client_home_path
+    if @user.save
+      if @user.client?
+        redirect_to client_home_path
+      else
+        redirect_to new_user_chef_path(@user.id)
+      end
     else
-      redirect_to new_user_chef_path(@user.id)
+      render 'new'
     end
-
   end
 
   def show

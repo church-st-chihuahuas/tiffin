@@ -1,6 +1,9 @@
 %h1 Sign Up To Be A Chef!
 
-= form_for [@user, @user.chef] do |form|
+.errors
+  = render 'shared/form_errors', resource: @chef
+
+= form_for [@chef.user, @chef] do |form|
   = form.label :business_name, class: :required
   = form.text_field :business_name, class: :focus
   %br

@@ -2,7 +2,7 @@
 
 %div.row.justify-content-center
   %div.col-md-4
-    = form_for(:user, url: users_path, method: :post) do |form|
+    = form_for @user do |form|
       %div.form-group
         = form.label :first_name, class: :required
         = form.text_field :first_name, class: 'focus form-control'
