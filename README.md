@@ -109,7 +109,7 @@ Daily Scrum Held on July 2nd at 2:55pm, July 3rd at 3:00pm, and July 4th at 10:3
 
 July 2: 
 
-- Andrew - [last 24] interviewed stakeholder and finalized product backlog items, [next 24] research Ruby on Rails and associated technologies, [impediments] lack; 
+- Andrew - [last 24] interviewed stakeholder and finalized product backlog items, [next 24] researched Ruby on Rails and associated technologies, [impediments] lack knowledge of some technologies to be used; 
 
 - Samir - [last 24] , [next 24] , [impediments] ;
 
@@ -121,7 +121,7 @@ July 2:
 
 July 3:
 
-- Andrew - [last 24] , [next 24] , [impediments] ; 
+- Andrew - [last 24] created sprint burndown chart, installed technology stack, participated in mob programming session, continued researching Ruby, set up meeting with stakeholder [next 24] continue researching Ruby, participate in next mob programming session, [impediments] homebrew not working correctly - will research possible solutions; 
 
 - Samir - [last 24] , [next 24] , [impediments] ;
 
@@ -134,7 +134,7 @@ July 3:
 
 July 4:
 
-- Andrew - [last 24] , [next 24] , [impediments] ; 
+- Andrew - [last 24] participated in mob programming, updated sprint burndown chart, continued researching Ruby [next 24] complete sprint burndown chart, work with team to update Trello board, and demo sprint results to stakeholder, [impediments] ; 
 
 - Samir - [last 24] , [next 24] , [impediments] ;
 
