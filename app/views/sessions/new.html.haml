@@ -5,7 +5,6 @@
       = form_for(:session, url: login_path) do |form|
         %div.form-group
           = form.label :email, class: :required
-          -#= form.text_field :email, class: :focus
           = form.text_field :email, class: 'focus form-control'
         %div.form-group
           = form.label :password, class: :required
