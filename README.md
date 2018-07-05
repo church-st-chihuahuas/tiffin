@@ -111,7 +111,7 @@ July 2:
 
 - Andrew - [last 24] interviewed stakeholder and finalized product backlog items, [next 24] researched Ruby on Rails and associated technologies, [impediments] lack knowledge of some technologies to be used; 
 
-- Samir - [last 24] , [next 24] , [impediments] ;
+- Samir - [last 24] Contributed to product backlog items, formatted README in Markdown for repo [next 24] Read Ruby tutorials and install Ruby/Rails infrastructure on machine, [impediments] Don't know any Ruby;
 
 - Eric - [last 24] , [next 24] , [impediments] ;
 
@@ -123,7 +123,7 @@ July 3:
 
 - Andrew - [last 24] created sprint burndown chart, installed technology stack, participated in mob programming session, continued researching Ruby, set up meeting with stakeholder [next 24] continue researching Ruby, participate in next mob programming session, [impediments] homebrew not working correctly - will research possible solutions; 
 
-- Samir - [last 24] , [next 24] , [impediments] ;
+- Samir - [last 24] Set up local instance of application and server on machine, discussed project architecture with Scrum team, [next 24] Begin tackling sprint backlog through mob programming session, [impediments] Know marginally more Ruby but still not a lot, and still getting a grasp on Rails project structure;
 
 - Eric - [last 24] , [next 24] , [impediments] ;
 
@@ -136,7 +136,7 @@ July 4:
 
 - Andrew - [last 24] participated in mob programming, updated sprint burndown chart, continued researching Ruby [next 24] complete sprint burndown chart, work with team to update Trello board, and demo sprint results to stakeholder, [impediments] ; 
 
-- Samir - [last 24] , [next 24] , [impediments] ;
+- Samir - [last 24] Participated in mob programming session over Google Hangout, [next 24] Continue mob programming approach to sprint backlog, begin refining UI elements of application, [impediments] ;
 
 - Eric - [last 24] , [next 24] , [impediments] ;
 
