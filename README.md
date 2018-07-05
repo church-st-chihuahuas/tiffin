@@ -129,7 +129,7 @@ July 3:
 
 - Christopher - [last 24] Setup app on local machine. Decided product architecture , [next 24] Create wireframes for login story, [impediments] Still learning application framework;
 
-- Santiago - [last 24] Rails app, up and running, provided instructions to the team, Relieved that teammates stepped up, [next 24] show the team how to use Rspec, and how to do validations in activerecord rails helped setup views, [impediments] FactoryBots for Rspec unit testing are not working;
+- Santiago - [last 24] Rails app, up and running, provided instructions to the team, Relieved that teammates stepped up and improved instructions for setting up environments, [next 24] show the team how to use Rspec, and how to do validations in activerecord rails helped setup views, [impediments] FactoryBots for Rspec unit testing are not working;
 
 
 July 4:
