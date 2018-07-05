@@ -1,11 +1,14 @@
 %h1 Login
-%p Find me in app/views/sessions/new.html.haml
 
-= form_for(:session, url: login_path) do |form|
-  = form.label :email, class: :required
-  = form.text_field :email, class: :focus
-  %br
-  = form.label :password, class: :required
-  = form.password_field :password, class: :focus
-  %br
-  = form.submit 'Log in', class: 'btn btn-primary'
+%div.row.justify-content-center
+  %div.col-md-4
+    = form_for(:session, url: login_path) do |form|
+      %div.form-group
+        = form.label :email, class: :required
+        -#= form.text_field :email, class: :focus
+        = form.text_field :email, class: 'focus form-control'
+      %div.form-group
+        = form.label :password, class: :required
+        = form.password_field :password, class: 'form-control'
+      %div.form-group
+        = form.submit 'Log in', class: 'btn btn-primary btn-block'
