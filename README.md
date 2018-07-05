@@ -67,7 +67,7 @@ AGE |  42
 WORK |  CEO of a new tech startup in Boston for which he provided the seed money
 FAMILY |  Married, with two children.  Wife works full-time as well.
 LOCATION |  Cambridge, MA
-ARCHETYPE |  An affluent, busy business owner living in a major urban area who is very comfortable using technology, sharing services, and has an active lifestyle.
+ARCHETYPE |  MOVER AND SHAKER - An affluent, busy business owner living in a major urban area who is very comfortable using technology, sharing services, and has an active lifestyle.
 GOALS |  To obtain healthy, home-cooked meals on the fly without lifting a finger
 FRUSTRATIONS |  Take-out is tasty, but tends to be unhealthy, especially on a recurring basis.  He and his wife have no time to cook, but aren’t ready to make the commitment in time or money to hire a full-time personal chef.  His family eats kosher and needs a chef who can satisfy that requirement.
 MOTIVATIONS |  To save time and maintain his family's healthy eating habits despite having a busy lifestyle.  
@@ -80,7 +80,7 @@ AGE |  22
 WORK |  line cook at a New American gastro pub in Boston; graduate of the Professional Chefs Program at the Cambridge School of Culinary Arts
 FAMILY |  Single, never married
 LOCATION |  Cambridge, MA
-ARCHETYPE |  A hard working and ambitious young chef working the late shift who is struggling to pay student loans
+ARCHETYPE |  CHEF WITH A DREAM - A hard working and ambitious young chef working the late shift who is struggling to pay student loans
 GOALS |  To earn money on the side doing what she loves.
 FRUSTRATIONS |  She knows she has to start at the bottom in order to attain her dream of becoming an executive chef, but she is struggling to pay the bills in a major urban area with a job that only pays $24,000 a year.
 MOTIVATIONS |  To create excellent dishes she is passionate about that offer a departure from the monotony of being a line cook, all while making extra money to pay off her student loans.
@@ -151,13 +151,13 @@ Rationale for Velocity: This is foundational work that will help us understand h
 
 Half-velocity is 12 Story Points; all stories are less than 12 Story Points.
 
-Evidence of stakeholder meeting, held between 12:45 and 1:10 on 05 July (stakeholder.png)
+Evidence of sprint review with stakeholder, held between 12:45 and 1:10 on 05 July (stakeholder.png); stakeholder was pleased with progress and accepted the sprint results; dev team was updated at 2:00 pm
 
 Sprint Burndown Chart:  https://docs.google.com/spreadsheets/d/1SVE2uY-h8r7OMYG0ia_5_TnMiQMErTgjWkkk6Y9zels/edit#gid=0
 
 Evidence of Test Driven Development and Mob Programming: https://youtu.be/ce0HGx1mebA
 
-#Sprint 2 - Due July 9, 2018 @ 3pm
+# Sprint 2 - Due July 9, 2018 @ 3pm
 
 July 5:
 
