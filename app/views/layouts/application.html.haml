@@ -14,5 +14,6 @@
   %body
     = render 'layouts/header'
     = render 'layouts/messages'
-    = yield
+    %div.header__offset
+      = yield
     = render 'layouts/footer'
