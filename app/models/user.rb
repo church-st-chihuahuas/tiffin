@@ -31,6 +31,8 @@ class User < ApplicationRecord
   validates :street_address, :city, :state, :zip_code,
             presence: true
 
+  has_one :chef
+
   def authenticate(password)
     password == self.password
   end

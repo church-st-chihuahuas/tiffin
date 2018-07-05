@@ -7,7 +7,12 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     @user.save
-    redirect_to root_path
+    if @user.client?
+      redirect_to client_home_path
+    else
+      redirect_to new_user_chef_path(@user.id)
+    end
+
   end
 
   def show
@@ -30,7 +35,7 @@ class UsersController < ApplicationController
     params.require(:user).permit(:id, :email, :password, :first_name,
                                  :last_name, :street_address, :city,
                                  :state, :zip_code, :contact_phone,
-                                 :password).merge(role: :client)
+                                 :password, :role)
   end
 
 end

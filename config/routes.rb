@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  get 'chefs/new'
-  get 'chefs/create'
-  get 'chefs/edit'
-  get 'chefs/update'
-  get 'chefs/delete'
+#  get 'chefs/new'
+#  get 'chefs/create'
+#  get 'chefs/edit'
+#  get 'chefs/update'
+#  get 'chefs/delete'
   get 'sessions/new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root   'static_pages#home'
@@ -13,5 +13,7 @@ Rails.application.routes.draw do
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
-  resources :users
+  resources :users do
+    resources :chefs
+  end
 end

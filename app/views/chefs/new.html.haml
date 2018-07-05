@@ -1,2 +1,10 @@
-%h1 Chefs#new
-%p Find me in app/views/chefs/new.html.haml
+%h1 Sign Up To Be A Chef!
+
+= form_for [@user, @user.chef] do |form|
+  = form.label :business_name, class: :required
+  = form.text_field :business_name, class: :focus
+  %br
+  = form.label :business_description, class: :required
+  = form.text_field :business_description
+  %br
+  = form.submit 'Sign Up To Be a Chef', class: 'btn btn-primary'

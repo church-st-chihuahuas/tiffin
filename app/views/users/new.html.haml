@@ -28,6 +28,11 @@
   = form.label :password, class: :required
   = form.password_field :password, class: :focus
   %br
+    = form.label :role, 'Client'
+    = form.radio_button :role, :client
+    = form.label :role, 'Chef'
+    = form.radio_button :role, :chef
+  %br
   = form.submit 'Sign Up', class: 'btn btn-primary'
 
 -#first
