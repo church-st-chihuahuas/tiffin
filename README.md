@@ -105,7 +105,58 @@ Only development team members have participated in creating estimations for the 
 
 # Sprint 1 - Due July 5th @ 3pm
 
-Daily Scrum Held on July 2nd at 2:55pm, July 3rd at 3:00pm, and July 4th at 10:30; Members recounted their actions over the past 24 hours, what they planned to do over the next 24 hours, and discussed impediments.
+Daily Scrum Held on July 2nd at 2:55pm, July 3rd at 3:00pm, and July 4th at 10:30.  Members recounted their actions over the past 24 hours, what they planned to do over the next 24 hours, and discussed impediments.
+
+July 2: 
+
+- Andrew - [last 24] interviewed stakeholder and finalized product backlog items, [next 24] research Ruby on Rails and associated technologies, [impediments] lack; 
+
+- Samir - [last 24] , [next 24] , [impediments] ;
+
+- Eric - [last 24] , [next 24] , [impediments] ;
+
+- Christopher - [last 24] , [next 24] , [impediments] ;
+
+- Santiago - [last 24] , [next 24] , [impediments] ;
+
+July 3:
+
+- Andrew - [last 24] , [next 24] , [impediments] ; 
+
+- Samir - [last 24] , [next 24] , [impediments] ;
+
+- Eric - [last 24] , [next 24] , [impediments] ;
+
+- Christopher - [last 24] , [next 24] , [impediments] ;
+
+- Santiago - [last 24] , [next 24] , [impediments] ;
+
+
+July 4:
+
+- Andrew - [last 24] , [next 24] , [impediments] ; 
+
+- Samir - [last 24] , [next 24] , [impediments] ;
+
+- Eric - [last 24] , [next 24] , [impediments] ;
+
+- Christopher - [last 24] , [next 24] , [impediments] ;
+
+- Santiago - [last 24] , [next 24] , [impediments] ;
+
+
+July 5: 
+
+- Andrew - [last 24] , [next 24] , [impediments] ; 
+
+- Samir - [last 24] , [next 24] , [impediments] ;
+
+- Eric - [last 24] , [next 24] , [impediments] ;
+
+- Christopher - [last 24] , [next 24] , [impediments] ;
+
+- Santiago - [last 24] , [next 24] , [impediments] ;
+
 
 Forecast of Velocity: 24 Story Points per Sprint
 
