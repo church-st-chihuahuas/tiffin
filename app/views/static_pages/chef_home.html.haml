@@ -1,1 +1,4 @@
 Chef!
+
+= content_for :user_menu do
+  = link_to 'Sign Out', logout_path,  method: :delete
