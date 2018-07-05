@@ -12,7 +12,9 @@
           crossorigin: 'anonymous'}
 
   %body
+    - byebug
     = render 'layouts/header'
+    = render 'layouts/messages'
     %div.container
       = yield
     = render 'layouts/footer'

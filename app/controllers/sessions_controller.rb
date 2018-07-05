@@ -9,14 +9,16 @@ class SessionsController < ApplicationController
       if user.chef?
         redirect_to chef_home_path
       else
-        redirect_to user_home_path, notice: 'Success!'
+        redirect_to user_home_path
       end
     else
-      # Create an error message.
-      render 'new', alert: 'failed'
+      render 'new', alert: 'Unable to login: email or password are incorrect.'
     end
   end
 
   def destroy
+    reset_session
+    flash[:notice] = 'You have successfully logged out.'
+    redirect_to root_path
   end
 end

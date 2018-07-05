@@ -7,18 +7,23 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+      flash.now[:alert] = 'Successfully created client account.'
       if @user.client?
         redirect_to client_home_path
       else
         redirect_to new_user_chef_path(@user.id)
       end
     else
+      flash[:alert] = 'Unable to create user account.'
       render 'new'
     end
   end
 
   def show
     @user = User.find_by(id: params[:id])
+    unless @user
+      flash.now[:alert] = 'User not found.'
+    end
   end
 
   def edit
