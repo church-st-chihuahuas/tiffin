@@ -113,7 +113,7 @@ July 2:
 
 - Samir - [last 24] Contributed to product backlog items, formatted README in Markdown for repo [next 24] Read Ruby tutorials and install Ruby/Rails infrastructure on machine, [impediments] Don't know any Ruby;
 
-- Eric - [last 24] , [next 24] , [impediments] ;
+- Eric - [last 24] Contributed to backlog items, participated in google hangout mob programming session, acted as Scrum Master, setup trello boards for the assignment as well as the project, learning ruby (mob programming really helps),  [next 24] continue to support team, review assingment backlog items, [impediments] the pace is tough, there's a lot to do and not a lot of time. it makes it hard to have thoughtful discussions because we have to keep moving;
 
 - Christopher - [last 24] , [next 24] Setup tools for development environment. Ruby/Rails tutorials. , [impediments] Getting started with dev environment;
 
@@ -125,7 +125,7 @@ July 3:
 
 - Samir - [last 24] Set up local instance of application and server on machine, discussed project architecture with Scrum team, [next 24] Begin tackling sprint backlog through mob programming session, [impediments] Know marginally more Ruby but still not a lot, and still getting a grasp on Rails project structure;
 
-- Eric - [last 24] , [next 24] , [impediments] ;
+- Eric - [last 24] , Contributed to refining product backlog items, participated in google hangout mob programming session, acted as Scrum Master, still in the porcess of learning ruby (mob programming really helps),  [next 24] continue to work with team on designing, developing, and shaking out requirements, [impediments] ;
 
 - Christopher - [last 24] Setup app on local machine. Decided product architecture , [next 24] Create wireframes for login story, [impediments] Still learning application framework;
 
@@ -138,7 +138,7 @@ July 4:
 
 - Samir - [last 24] Participated in mob programming session over Google Hangout, [next 24] Continue mob programming approach to sprint backlog, begin refining UI elements of application, [impediments] ;
 
-- Eric - [last 24] , [next 24] , [impediments] ;
+- Eric - [last 24] Participated in mob programming session over Google Hangout (these last for hours), updated trello baords, [next 24] help with testing and refining code, [impediments] ;
 
 - Christopher - [last 24] Create wireframes for the login story and mob programmed the beginning of the login and create user stories, [next 24] Mob program the remaining login items, Continue to refine UI ahead of sprint review, [impediments] None;
 
@@ -151,7 +151,7 @@ July 5:
 
 - Samir - [last 24] , [next 24] , [impediments] ;
 
-- Eric - [last 24] , [next 24] , [impediments] ;
+- Eric - [last 24] Participated in mob programming session over Google Hangout (these last for hours), acted as Scrum Master, updated trello boards [next 24] close the current sprint, incorporate feedback from stakeholder, start a new sprint, [impediments] ;
 
 - Christopher - [last 24] , [next 24] , [impediments] ;
 
