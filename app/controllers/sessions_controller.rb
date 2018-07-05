@@ -6,7 +6,12 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
-      redirect_to root_path, notice: 'Success!'
+      if user.chef?
+        redirect_to chef_home_path
+      end
+
+      redirect_to user_home_path, notice: 'Success!'
+
     else
       # Create an error message.
       render 'new', alert: 'failed'
