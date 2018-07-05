@@ -147,7 +147,7 @@ July 4:
 
 July 5: 
 
-- Andrew - [last 24] , [next 24] , [impediments] ; 
+- Andrew - [last 24] participated in mob programming session, prepared presentation for stakeholder, worked on compiling inputs for assignment on canvas and updated sprint backlog and sprint burndown chart, [next 24] sprint review, sprint retrospective, and sprint planning [impediments] None; 
 
 - Samir - [last 24] , [next 24] , [impediments] ;
 
