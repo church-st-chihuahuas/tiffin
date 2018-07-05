@@ -1,13 +1,14 @@
 %div.login
-  %h2 Sign in
-  %div.row.justify-content-center
-    %div.col-md-4
-      = form_for(:session, url: login_path) do |form|
-        %div.form-group
-          = form.label :email, class: :required
-          = form.text_field :email, class: 'focus form-control'
-        %div.form-group
-          = form.label :password, class: :required
-          = form.password_field :password, class: 'form-control'
-        %div.form-group
-          = form.submit 'Log in', class: 'btn btn-primary btn-block'
+  %div.login__form-box
+    %h2.login__heading Sign in
+    %div.row.justify-content-center
+      %div.col
+        = form_for(:session, url: login_path) do |form|
+          %div.form-group
+            = form.label :email, class: :required
+            = form.text_field :email, class: 'focus form-control'
+          %div.form-group
+            = form.label :password, class: :required
+            = form.password_field :password, class: 'form-control'
+          %div.form-group
+            = form.submit 'Log in', class: 'btn btn-primary btn-block'
