@@ -115,7 +115,7 @@ July 2:
 
 - Eric - [last 24] , [next 24] , [impediments] ;
 
-- Christopher - [last 24] , [next 24] , [impediments] ;
+- Christopher - [last 24] , [next 24] Setup tools for development environment. Ruby/Rails tutorials. , [impediments] Getting started with dev environment;
 
 - Santiago - [last 24] , [next 24] , [impediments] ;
 
@@ -127,7 +127,7 @@ July 3:
 
 - Eric - [last 24] , [next 24] , [impediments] ;
 
-- Christopher - [last 24] , [next 24] , [impediments] ;
+- Christopher - [last 24] Setup app on local machine. Decided product architecture , [next 24] Create wireframes for login story, [impediments] Still learning application framework;
 
 - Santiago - [last 24] , [next 24] , [impediments] ;
 
@@ -140,7 +140,7 @@ July 4:
 
 - Eric - [last 24] , [next 24] , [impediments] ;
 
-- Christopher - [last 24] , [next 24] , [impediments] ;
+- Christopher - [last 24] Create wireframes for the login story and mob programmed the beginning of the login and create user stories, [next 24] Mob program the remaining login items, Continue to refine UI ahead of sprint review, [impediments] None;
 
 - Santiago - [last 24] , [next 24] , [impediments] ;
 
