@@ -149,7 +149,7 @@ July 5:
 
 - Andrew - [last 24] participated in mob programming session, prepared presentation for stakeholder, worked on compiling inputs for assignment on canvas and updated sprint backlog and sprint burndown chart, [next 24] sprint review, sprint retrospective, and sprint planning [impediments] None; 
 
-- Samir - [last 24] , [next 24] , [impediments] ;
+- Samir - [last 24] Participated in 2 mob programming sessions, fixed alerts on login/signup forms, made UI adjustments , [next 24] Sprint review, retrospective, plan next sprint, learn more about rendering templates in Rails, [impediments] ;
 
 - Eric - [last 24] Participated in mob programming session over Google Hangout (these last for hours), acted as Scrum Master, updated trello boards [next 24] close the current sprint, incorporate feedback from stakeholder, start a new sprint, [impediments] ;
 
