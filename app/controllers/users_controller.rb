@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     if @user.save
       flash.now[:alert] = 'Successfully created client account.'
       if @user.client?
-        redirect_to client_home_path
+        redirect_to user_home_path
       else
         redirect_to new_user_chef_path(@user.id)
       end

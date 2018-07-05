@@ -1,7 +1,15 @@
-- if notice
-  .alert.bg-success
-    = notice.html_safe
+- flash.each do |type, message|
+  - if type == 'alert'
+    .alert.bg-danger
+      = message.html_safe
+  - elsif type == 'notice'
+    .alert.bg-success
+      = message.html_safe
 
-- if alert
-  .alert.bg-danger
-    = alert.html_safe
+-#- if notice
+-#  .alert.bg-success
+-#    = notice.html_safe
+-#
+-#- if alert
+-#  .alert.bg-danger
+-#    = alert.html_safe
