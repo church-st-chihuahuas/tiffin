@@ -164,6 +164,7 @@ Rationale for Velocity: This is foundational work that will help us understand h
 
 Half-velocity is 12 Story Points; all stories are less than 12 Story Points.
 
+Evidence of stakeholder meeting, held between 12:45 and 1:10 on 05 July (stakeholder.jpg)
 
 Sprint Burndown Chart:  https://docs.google.com/spreadsheets/d/1SVE2uY-h8r7OMYG0ia_5_TnMiQMErTgjWkkk6Y9zels/edit#gid=0
 
