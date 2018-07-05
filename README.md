@@ -167,5 +167,7 @@ Half-velocity is 12 Story Points; all stories are less than 12 Story Points.
 
 Sprint Burndown Chart:  https://docs.google.com/spreadsheets/d/1SVE2uY-h8r7OMYG0ia_5_TnMiQMErTgjWkkk6Y9zels/edit#gid=0
 
+Evidence of Test Driven Development and Mob Programming: https://youtu.be/ce0HGx1mebA
+
 
 
