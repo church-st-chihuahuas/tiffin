@@ -11,6 +11,10 @@ User.create([
                  contact_phone: '212-555-1212', street_address: 'Hogwarts Cottage 4', city: 'Hogsmeade', state: 'Wales', zip_code: '92501', role: :chef},
                 {first_name: 'Severus', last_name: 'Snape', email: 'severus@hogwarts.edu', password: 'harry',
                  contact_phone: '212-555-1213', street_address: 'Basement 1', city: 'Hogsmeade', state: 'Wales', zip_code: '92503', role: :chef},
+                {first_name: 'Jim', last_name: 'Bernstein', email: 'jim@excelsior.com', password: 'harry',
+                 contact_phone: '212-555-1217', street_address: '1000 Massachusetts Ave.', city: 'Cambridge', state: 'MA', zip_code: '02138', role: :client},
+                {first_name: 'Kerry', last_name: 'Cerulean', email: 'kerry@tiffin.com', password: 'harry',
+                 contact_phone: '212-555-1218', street_address: '2020 Massachusetts Ave.', city: 'Cambridge', state: 'MA', zip_code: '02140', role: :chef},
                 {first_name: 'Albus', last_name: 'Dumbledore', email: 'albus@hogwarts.edu', password: 'harry',
                  contact_phone: '212-555-1214', street_address: 'Tower Office 2', city: 'Hogsmeade', state: 'Wales', zip_code: '92504', role: :client},
                 {first_name: 'Harry', last_name: 'Potter', email: 'harry@hogwarts.edu', password: 'harry',
@@ -23,7 +27,9 @@ Chef.create([{user_id: User.find_by_email('rubius@hogwarts.edu').id,
               business_name: "Hagrid's Hot Dog Hut",
               business_description: "We make hot dogs out of all the magical beasts you can imagine!"},
              {user_id: User.find_by_email('severus@hogwarts.edu').id, business_name: "Snape's Slightly Poisonous Potions",
-              business_description: "Our potions are only slightly poisonous!"}])
+              business_description: "Our potions are only slightly poisonous!"},
+             {user_id: User.find_by_email('kerry@tiffin.com').id, business_name: "Kerry's Kitchen",
+              business_description: "We serve up healthy meals for a variety of tastes and diets."}])
 
 Certification.create([{name: 'ServSafe', authority: 'ServSafe', url: "https://www.servsafe.com/ServSafe-Manager/Get-Certified"},
                       {name: 'Kosher', authority: 'OK', url: "http://www.ok.org/"},
