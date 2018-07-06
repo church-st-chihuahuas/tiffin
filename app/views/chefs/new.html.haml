@@ -3,11 +3,14 @@
 .errors
   = render 'shared/form_errors', resource: @chef
 
-= form_for [@chef.user, @chef] do |form|
-  = form.label :business_name, class: :required
-  = form.text_field :business_name, class: :focus
-  %br
-  = form.label :business_description, class: :required
-  = form.text_field :business_description
-  %br
-  = form.submit 'Sign Up To Be a Chef', class: 'btn btn-primary'
+.row.justify-content-center
+  .col
+    = form_for [@chef.user, @chef] do |form|
+      .form-group
+        = form.label :business_name, class: :required
+        = form.text_field :business_name, class: [:focus, 'form-control']
+      .form-group
+        = form.label :business_description, class: :required
+        = form.text_field :business_description, class: 'form-control'
+      .form-group
+        = form.submit 'Sign Up To Be a Chef', class: ['btn btn-primary', 'form-control']
