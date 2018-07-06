@@ -11,6 +11,7 @@ describe User do
 
   describe 'validations' do
     it { is_expected.to validate_presence_of(:email) }
+    it { is_expected.to validate_uniqueness_of(:email)}
     it { is_expected.to validate_presence_of(:password) }
     # it { is_expected.to validate_confirmation_of(:password) }
     it { is_expected.to validate_presence_of(:role) }
@@ -26,14 +27,15 @@ describe User do
 
   # we need to look at this test and figure out
   # why it's passing when we think it should fail
-  context 'when email address is already taken' do
-    before do
-      user_with_same_email = user.dup
-      user_with_same_email.save
-    end
-
-    it { is_expected.to_not be_valid }
-  end
+  # context 'when email address is already taken' do
+  #   before do
+  #     user_with_same_email = user.dup
+  #     user_with_same_email.save
+  #
+  #   end
+  #
+  #   it { is_expected.to_not be_valid }
+  # end
 
   describe '#authenticate' do
 
