@@ -1,5 +1,6 @@
 class Cuisine < ApplicationRecord
   validates :name,
-            presence: true
+            presence: true,
+            uniqueness: true
 
 end
