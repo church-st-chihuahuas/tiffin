@@ -1,0 +1,15 @@
+%h1
+  Chef Page
+
+%hr
+
+%h2
+  = @chef.user.full_name
+
+.business
+
+  .businessName
+    %strong= @chef.business_name
+
+  .businessDescription
+    = @chef.business_description
