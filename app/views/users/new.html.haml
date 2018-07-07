@@ -48,4 +48,5 @@
       = form.submit 'Sign Up', class: 'btn btn-primary btn-block'
 
 
-
+= content_for :user_menu do
+  = link_to 'Sign In', login_path
