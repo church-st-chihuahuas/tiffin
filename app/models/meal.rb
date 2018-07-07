@@ -3,7 +3,7 @@ class Meal < ApplicationRecord
             presence: true
 
   belongs_to :chef
-  has_many :cuisines
-  has_many :dietary_accommodations
+  has_and_belongs_to_many :cuisine
+  has_and_belongs_to_many :dietary_accommodation
 
 end
