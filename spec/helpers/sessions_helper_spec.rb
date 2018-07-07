@@ -22,6 +22,13 @@ describe SessionsHelper do
   end
 
   describe "#log_out" do
+    let(:user) {create(:user)}
+
+    before {log_in(user)}
+
+    it 'should store user id in session' do
+      expect(session[:user_id]).to eq(user.id)
+    end
 
   end
 

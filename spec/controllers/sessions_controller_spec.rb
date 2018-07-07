@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 describe SessionsController do
+  include SessionsHelper
+
   describe "POST create" do
     let(:client) {create(:user)}
     it "renders the index template" do
@@ -14,5 +16,27 @@ describe SessionsController do
       get :new
       expect(response).to render_template('new')
     end
+  end
+
+  describe "DELETE destroy" do
+    it 'logs out user' do
+      delete :destroy
+      expect(response).to redirect_to(root_path)
+    end
+  end
+
+  describe 'DELETE #destroy' do
+    context 'success' do
+      let(:client) {create(:user)}
+      before do
+        log_in(client)
+        delete :destroy
+      end
+      it 'deletes the user\'s session' do
+        expect(session[:user_id]).to be_nil
+      end
+
+    end
+
   end
 end
