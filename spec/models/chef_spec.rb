@@ -6,7 +6,7 @@ describe Chef do
   subject {chef}
 
   describe 'associations' do
-
+    it { is_expected.to belong_to(:user) }
   end
 
   describe 'validations' do
