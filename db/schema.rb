@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_07_172506) do
+ActiveRecord::Schema.define(version: 2018_07_07_213540) do
 
   create_table "active_admin_comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "namespace"
@@ -34,12 +34,27 @@ ActiveRecord::Schema.define(version: 2018_07_07_172506) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "certifications_chefs", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "certification_id"
+    t.integer "chef_id"
+  end
+
   create_table "chefs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "user_id"
     t.string "business_name"
     t.text "business_description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "chefs_cuisines", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "cuisine_id"
+    t.integer "chef_id"
+  end
+
+  create_table "chefs_dietary_accommodations", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "dietary_accommodation_id"
+    t.integer "chef_id"
   end
 
   create_table "cuisines", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

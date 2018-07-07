@@ -4,4 +4,5 @@ class Cuisine < ApplicationRecord
             uniqueness: true
 
   has_and_belongs_to_many(:meal)
+  has_and_belongs_to_many(:chef)
 end

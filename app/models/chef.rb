@@ -9,6 +9,10 @@ class Chef < ApplicationRecord
   validates :business_name, :business_description,
             presence: true
 
+
   has_many :meal
+  has_and_belongs_to_many :cuisine
+  has_and_belongs_to_many :dietary_accommodation
+  has_and_belongs_to_many :certification
 
 end

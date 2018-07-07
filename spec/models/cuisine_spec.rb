@@ -7,6 +7,7 @@ describe Cuisine do
 
   describe 'associations' do
     it { is_expected.to have_and_belong_to_many(:meal)}
+    it { is_expected.to have_and_belong_to_many(:chef)}
   end
 
   describe 'validations' do

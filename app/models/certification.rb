@@ -10,4 +10,7 @@ class Certification < ApplicationRecord
                 with: URI::regexp(%w(http https)),
                 message: 'does not appear to be a valid URL'
             }
+
+  has_and_belongs_to_many(:chef)
+
 end
