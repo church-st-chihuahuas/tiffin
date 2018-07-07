@@ -38,3 +38,7 @@ Certification.create([{name: 'ServSafe', authority: 'ServSafe', url: "https://ww
 DietaryAccommodation.create([{name: 'vegetarian'}, {name: 'gluten free'}, {name: 'vegan'}, {name: 'kosher'}, {name: 'halal'}])
 
 Cuisine.create([{name: 'Indian'}, {name: 'Chinese'}, {name: 'Mexican'}, {name: 'Italian'}, {name: 'American'}])
+
+Meal.create(
+
+)

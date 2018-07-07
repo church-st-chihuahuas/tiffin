@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_07_164155) do
+ActiveRecord::Schema.define(version: 2018_07_07_172506) do
 
   create_table "active_admin_comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "namespace"
@@ -48,10 +48,20 @@ ActiveRecord::Schema.define(version: 2018_07_07_164155) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "cuisines_meals", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "cuisine_id"
+    t.integer "meal_id"
+  end
+
   create_table "dietary_accommodations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "dietary_accommodations_meals", id: false, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "dietary_accommodation_id"
+    t.integer "meal_id"
   end
 
   create_table "meals", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
