@@ -37,9 +37,19 @@ Certification.create([{name: 'ServSafe', authority: 'ServSafe', url: "https://ww
 
 DietaryAccommodation.create([{name: 'vegetarian'}, {name: 'gluten free'}, {name: 'vegan'}, {name: 'kosher'}, {name: 'halal'}])
 
-Cuisine.create([{name: 'Indian'}, {name: 'Chinese'}, {name: 'Mexican'}, {name: 'Italian'}, {name: 'American'}])
+Cuisine.create([{name: 'Indian'}, {name: 'Chinese'}, {name: 'Mexican'}, {name: 'Italian'}, {name: 'American'}, {name: 'Middle Eastern'}])
 
 Meal.create([{chef: Chef.first, short_name: 'Chana Masala', description: 'Chickpeas in Masala sauce.'}]) do |meal|
   meal.cuisine << Cuisine.find_by_name('Indian')
   meal.dietary_accommodation << DietaryAccommodation.find_by_name('vegetarian')
+end
+
+Meal.create([{chef: Chef.first, short_name: 'Tofu Tacos', description: 'Tofu Tacos just like at Pancho Villa in the Mission.'}]) do |meal|
+  meal.cuisine << Cuisine.find_by_name('Mexican')
+  meal.dietary_accommodation << DietaryAccommodation.find_by_name('vegetarian')
+end
+
+Meal.create([{chef: Chef.first, short_name: 'Matzoh Ball Soup', description: 'Matzoh ball soup, perfect for Passover.  Mazel Tov!'}]) do |meal|
+  meal.cuisine << Cuisine.find_by_name('Middle Eastern')
+  meal.dietary_accommodation << DietaryAccommodation.find_by_name('kosher')
 end
