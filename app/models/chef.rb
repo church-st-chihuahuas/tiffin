@@ -9,4 +9,5 @@ class Chef < ApplicationRecord
   validates :business_name, :business_description,
             presence: true
 
+
 end

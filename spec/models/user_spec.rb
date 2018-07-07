@@ -6,7 +6,8 @@ describe User do
   subject {user}
 
   describe 'associations' do
-
+    it { is_expected.to have_one(:chef) }
+    # it { is_expected.to have_many(:page_concurrency_detectors) }
   end
 
   describe 'validations' do
