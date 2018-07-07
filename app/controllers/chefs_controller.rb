@@ -18,6 +18,11 @@ class ChefsController < ApplicationController
     end
   end
 
+  def show
+    @chef = User.find_by(id: params[:user_id]).chef
+    raise ActiveRecord::RecordNotFound unless @chef
+  end
+
   def edit
   end
 
