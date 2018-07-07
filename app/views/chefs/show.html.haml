@@ -1,15 +1,40 @@
-%h1
-  Chef Page
+.container
+  .row
+    %h1
+      Chef Page
 
-%hr
+  %hr
 
-%h2
-  = @chef.user.full_name
+  .row
+    %h2
+      = @chef.user.full_name
 
-.business
+  .row
+    .business
 
-  .businessName
-    %strong= @chef.business_name
+      .business-name
+        %strong= @chef.business_name
 
-  .businessDescription
-    = @chef.business_description
+      .business-description
+        = @chef.business_description
+
+  %hr
+
+  .row
+    .meals
+      %h3 Meals Offered
+
+      .row
+        - @chef.meal.each do |meal|
+          .col
+            .card
+              = image_tag('tiffin_cover.jpg', class: 'card-img-top')
+              .card-body
+                %h5.card-title= meal.short_name
+                %p.card-text= meal.description
+                .meal-cuisines
+                  - meal.cuisine.each do |cuisine|
+                    %small= cuisine.name
+                .meal-accommodations
+                  - meal.dietary_accommodation.each do |acc|
+                    %small= acc.name
