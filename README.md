@@ -1,3 +1,5 @@
+[![Build Status](https://semaphoreci.com/api/v1/eparker71-66/tiffin/branches/master/badge.svg)](https://semaphoreci.com/eparker71-66/tiffin)
+
 ## Team Info
 
 #### Team Name
