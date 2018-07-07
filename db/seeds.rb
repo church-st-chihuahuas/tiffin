@@ -39,6 +39,7 @@ DietaryAccommodation.create([{name: 'vegetarian'}, {name: 'gluten free'}, {name:
 
 Cuisine.create([{name: 'Indian'}, {name: 'Chinese'}, {name: 'Mexican'}, {name: 'Italian'}, {name: 'American'}])
 
-Meal.create(
-
-)
+Meal.create([{chef: Chef.first, short_name: 'Chana Masala', description: 'Chickpeas in Masala sauce.'}]) do |meal|
+  meal.cuisine << Cuisine.find_by_name('Indian')
+  meal.dietary_accommodation << DietaryAccommodation.find_by_name('vegetarian')
+end
