@@ -169,6 +169,30 @@ July 5:
 
 - Eric - [last 24] Participated in mob programming session over Google Hangout (these last for hours), acted as Scrum Master, updated trello boards [next 24] close the current sprint, incorporate feedback from stakeholder, start a new sprint, [impediments] ;
 
-- Christopher - [last 24] , [next 24] , [impediments] ;
+- Christopher -[last 24 ] Participated in mob programming sessions, and updated UI to match wireframes , [next 24] Planning for sprint 2, [impediments] None;
 
 - Santiago - [last 24] During mob programming, introduced controllers and model rails generators to the team, reviewed activerecord enum, which provides wonderful DSLs. [next 24] learn about feature testing; figure out better ways to impart knowledge on Rails to the team, [impediments] flash messages not working ;
+
+July 6:
+
+- Andrew - [last 24], [next 24], [impediments]
+
+- Samir - [last 24], [next 24], [impediments]
+
+- Eric - [last 24], [next 24], [impediments]
+
+- Santiago - [last 24], [next 24], [impediments]
+
+- Christopher - [last 24] Participated in sprint planning for Sprint 2, [next 24] Begin work on chef display ticket, star any required UI work if possible, [impediments] None.
+
+July 7:
+
+- Andrew - [last 24], [next 24], [impediments]
+
+- Samir - [last 24], [next 24], [impediments]
+
+- Eric - [last 24], [next 24], [impediments]
+
+- Santiago - [last 24], [next 24], [impediments]
+
+- Christopher - [last 24] Paired with Santiago to complete login and session UI workflow, [next 24] Work with Santiago to complete UI workflow, and then begin mobbing the chef display data, [impediments] None
