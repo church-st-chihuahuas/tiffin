@@ -47,7 +47,7 @@
               = form.password_field :password_confirmation, class: 'form-control'
 
             %div.form-check
-              = form.radio_button :role, :client, id: :clientRole, class: 'form-check-input'
+              = form.radio_button :role, :client, id: :clientRole, class: 'form-check-input', checked: true
               = form.label :role, 'Client', class: 'form-check-label', for: :clientRole
             %div.form-check
               = form.radio_button :role, :chef, id: :chefRole, class: 'form-check-input'
