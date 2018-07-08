@@ -8,7 +8,7 @@
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
 
   position: fixed;
@@ -18,6 +18,16 @@
 
 .header__title {
   height: 100%;
+}
+
+.header__image {
+  padding-top: 5px;
+  height: 80px;
+  max-widt: 100px;
+}
+
+.header__right {
+  margin-left: auto;
 }
 
 .header__offset {
