@@ -12,9 +12,10 @@ class UsersController < ApplicationController
     if @user.save
       flash.now[:alert] = 'Successfully created client account.'
       if @user.client?
-        redirect_to login_path
+        log_in(@user)
+        redirect_to user_home_path
       else
-        redirect_to login_path(@user.id)
+        redirect_to new_user_chefs_path(@user.id)
       end
     else
       flash[:alert] = 'Unable to create user account.'

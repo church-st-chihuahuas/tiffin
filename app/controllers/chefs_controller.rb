@@ -11,6 +11,7 @@ class ChefsController < ApplicationController
     end
     if @chef.save
       flash.now[:alert] = 'Successfully created chef account.'
+      log_in(@user)
       redirect_to chef_home_path
     else
       flash.now[:alert] = 'Unable to create chef account.'
