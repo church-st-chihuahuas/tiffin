@@ -1,0 +1,14 @@
+%table
+  %tr
+    %th
+      Name
+    %th
+      Description
+
+  - @meals.each do | meal |
+    %tr
+      %td
+        =meal.short_name
+      %td
+        =meal.description
+      
