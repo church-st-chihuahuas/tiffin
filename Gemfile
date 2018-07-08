@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'activeadmin', '~> 1.1'
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 gem 'haml-rails', '~> 1.0'
+gem 'bootstrap', '~> 4.1.1'
 
 
 group :development, :test do

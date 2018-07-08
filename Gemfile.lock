@@ -59,8 +59,14 @@ GEM
     arbre (1.1.1)
       activesupport (>= 3.0.0)
     arel (9.0.0)
+    autoprefixer-rails (8.6.5)
+      execjs
     backports (3.11.3)
     bindex (0.5.0)
+    bootstrap (4.1.1)
+      autoprefixer-rails (>= 6.0.3)
+      popper_js (>= 1.12.9, < 2)
+      sass (>= 3.5.2)
     builder (3.2.3)
     byebug (10.0.2)
     capybara (2.18.0)
@@ -196,6 +202,7 @@ GEM
       mini_portile2 (~> 2.3.0)
     polyamorous (1.3.3)
       activerecord (>= 3.0)
+    popper_js (1.12.9)
     public_suffix (3.0.2)
     puma (3.11.4)
     rack (2.0.5)
@@ -328,6 +335,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin (~> 1.1)
+  bootstrap (~> 4.1.1)
   byebug
   capybara (~> 2.13)
   cucumber-rails (~> 1.5)
