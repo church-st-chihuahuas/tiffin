@@ -1,10 +1,5 @@
 Rails.application.routes.draw do
   ActiveAdmin.routes(self)
-#  get 'chefs/new'
-#  get 'chefs/create'
-#  get 'chefs/edit'
-#  get 'chefs/update'
-#  get 'chefs/delete'
   get 'sessions/new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root   'users#new'

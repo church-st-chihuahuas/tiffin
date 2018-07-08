@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
 
+  skip_before_action :require_login, only: [:new, :create]
+  before_action :check_signed_in, only: [:new]
+
   def new
     @user = User.new
   end
@@ -9,9 +12,9 @@ class UsersController < ApplicationController
     if @user.save
       flash.now[:alert] = 'Successfully created client account.'
       if @user.client?
-        redirect_to user_home_path
+        redirect_to login_path
       else
-        redirect_to new_user_chef_path(@user.id)
+        redirect_to login_path(@user.id)
       end
     else
       flash[:alert] = 'Unable to create user account.'

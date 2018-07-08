@@ -12,14 +12,25 @@ describe SessionsController do
   end
 
   describe "GET new" do
-    it 'renders the new template' do
-      get :new
-      expect(response).to render_template('new')
+    context 'when user is logged out' do
+      it 'renders the new template' do
+        get :new
+        expect(response).to render_template('new')
+      end
+    end
+
+    context 'when user is logged in' do
+      let(:client) {create(:user)}
+      it 'redirects to user home' do
+        log_in(client)
+        get :new
+        expect(response).to redirect_to(user_home_path)
+      end
     end
   end
 
   describe "DELETE destroy" do
-    it 'logs out user' do
+    it 'redirects to root path' do
       delete :destroy
       expect(response).to redirect_to(root_path)
     end
