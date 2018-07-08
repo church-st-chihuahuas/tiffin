@@ -1,7 +1,7 @@
 class MealsController < ApplicationController
 
   def index
-    keys = params[:report_form][:q] if params[:report_form]
+    keys = params[:report_form][:q].split() if params[:report_form]
     @meals = Meal.joins(:cuisine).includes(:cuisine)
                  .joins(:dietary_accommodation).includes(:dietary_accommodation)
                  .joins(:chef).includes(:chef)
