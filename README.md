@@ -209,6 +209,8 @@ July 8:  4:00 pm on 08 July 2018
 - Andrew -  [Last 24]  Pulled geocoords for addresses, completed model for meals, dietary accommodations, cuisines, and certifications
             [Next 24] Incorporating distance search for chefs, connecting with stakeholder, preparing demo
             [Impediments] Gem doesn’t allow direct testing, testing manual
+            
+- Christopher - [Last 24] Finished pair programming login and session management, added logo and links to home page, pair programmed chef display and search, [Next 24] Continue pair programming chef display and search, add tests for chef login and session management, [Impediments] None.
            
 
 Forecast of Velocity: 40 Story Points per Sprint
