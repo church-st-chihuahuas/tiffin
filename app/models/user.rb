@@ -18,16 +18,9 @@ class User < ApplicationRecord
   validates :role,
             presence: true
 
-
   enum role: {client: 'client', chef: 'chef'}
 
-  validates :first_name,
-            presence: true
-
-  validates :last_name,
-            presence: true
-
-  validates :contact_phone,
+  validates :first_name, :last_name, :contact_phone,
             presence: true
 
   validates :street_address, :city, :state, :zip_code, :latitude, :longitude,
@@ -41,6 +34,10 @@ class User < ApplicationRecord
 
   def full_name
     "#{self.first_name} #{self.last_name}"
+  end
+
+  def full_address
+    "#{self.street_address}, #{self.city}, #{self.state}, #{self.zip_code}"
   end
 
 end
