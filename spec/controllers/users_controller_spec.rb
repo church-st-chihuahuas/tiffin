@@ -24,6 +24,16 @@ describe UsersController do
   end
 
   describe 'POST create' do
+    let(:client) {build(:user, street_address: '1001 Massachusetts Ave.',
+                         city: 'Cambridge', state: 'MA', zip_code: '02138',
+                         first_name: 'John', last_name: 'Smith', email: 'john@example.com',
+                         password: 'security', password_confirmation: 'security')}
+    it 'geocodes the user location' do
+      post :create, {params: {user: client.attributes}}
+      my_client = User.find_by_email(client.email)
+      expect(my_client.latitude).to be_within(0.01).of(42.3693)
+      expect(my_client.longitude).to be_within(0.01).of(-71.1112)
 
+    end
   end
 end
