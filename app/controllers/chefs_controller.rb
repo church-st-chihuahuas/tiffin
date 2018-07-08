@@ -10,23 +10,31 @@ class ChefsController < ApplicationController
     end
 
     like_array = keys.map do |key|
-       "description LIKE '%#{key}%'"
+      "description LIKE '%#{key}%'"
     end
     like_string = like_array.join(" OR ")
 
 
     @chefs = Chef.joins(:cuisine).includes(:cuisine)
                  .joins(:dietary_accommodation).includes(:dietary_accommodation)
+                 .joins(:certification).includes(:certification)
                  .joins(:meal).includes(:meal)
                  .where(cuisines: {name: keys})
                  .or(Chef.joins(:cuisine).includes(:cuisine)
                          .joins(:dietary_accommodation).includes(:dietary_accommodation)
+                         .joins(:certification).includes(:certification)
                          .joins(:meal).includes(:meal)
                          .where(dietary_accommodations: {name: keys}))
                  .or(Chef.joins(:cuisine).includes(:cuisine)
                          .joins(:dietary_accommodation).includes(:dietary_accommodation)
+                         .joins(:certification).includes(:certification)
                          .joins(:meal).includes(:meal)
                          .where(like_string))
+                 .or(Chef.joins(:cuisine).includes(:cuisine)
+                         .joins(:dietary_accommodation).includes(:dietary_accommodation)
+                         .joins(:certification).includes(:certification)
+                         .joins(:meal).includes(:meal)
+                         .where(certifications: {name: keys}))
 
   end
 
