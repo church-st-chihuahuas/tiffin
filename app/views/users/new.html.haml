@@ -1,52 +1,57 @@
-%h1 Sign Up
+.container
+  .row.home-page
+    .col-md
+      = image_tag('tiffin_cover.jpg', class: 'card-img-top')
+    .col-md
+      %h2.login__heading Sign Up
 
-%div.row.justify-content-center
-  %div.col-md-4
-    = form_for @user do |form|
-      %div.form-group
-        = form.label :first_name, class: :required
-        = form.text_field :first_name, class: 'focus form-control'
-      %div.form-group
-        = form.label :last_name, class: :required
-        = form.text_field :last_name, class: 'form-control'
-      %div.form-group
-        = form.label :email, class: :required
-        = form.text_field :email, class: 'form-control'
+      %div.justify-content-center
+        %div.sign-up__box
+          = form_for @user do |form|
+            %div.form-group
+              = form.label :first_name, class: :required
+              = form.text_field :first_name, class: 'focus form-control'
+            %div.form-group
+              = form.label :last_name, class: :required
+              = form.text_field :last_name, class: 'form-control'
+            %div.form-group
+              = form.label :email, class: :required
+              = form.text_field :email, class: 'form-control'
 
-      %div.form-group
-        = form.label :street_address, class: :required
-        = form.text_field :street_address, class: 'form-control'
+            %div.form-group
+              = form.label :street_address, class: :required
+              = form.text_field :street_address, class: 'form-control'
 
-      %div.form-group
-        = form.label :city, class: :required
-        = form.text_field :city, class: 'form-control'
+            %div.form-group
+              = form.label :city, class: :required
+              = form.text_field :city, class: 'form-control'
 
-      %div.form-group
-        = form.label :state, class: :required
-        = form.text_field :state, class: 'form-control'
+            %div.form-group
+              = form.label :state, class: :required
+              = form.text_field :state, class: 'form-control'
 
-      %div.form-group
-        = form.label :zip_code, class: :required
-        = form.text_field :zip_code, class: 'form-control'
+            %div.form-group
+              = form.label :zip_code, class: :required
+              = form.text_field :zip_code, class: 'form-control'
 
-      %div.form-group
-        = form.label :contact_phone, class: :required
-        = form.text_field :contact_phone, class: 'form-control'
+            %div.form-group
+              = form.label :contact_phone, class: :required
+              = form.text_field :contact_phone, class: 'form-control'
 
-      %div.form-group
-        = form.label :password, class: :required
-        = form.password_field :password, class: 'form-control'
+            %div.form-group
+              = form.label :password, class: :required
+              = form.password_field :password, class: 'form-control'
 
-      %div.form-group
-        = form.label :password_confirmation, class: :required
-        = form.password_field :password_confirmation, class: 'form-control'
+            %div.form-group
+              = form.label :password_confirmation, class: :required
+              = form.password_field :password_confirmation, class: 'form-control'
 
-      %div.form-check
-        = form.radio_button :role, :client, id: :clientRole, class: 'form-check-input'
-        = form.label :role, 'Client', class: 'form-check-label', for: :clientRole
-      %div.form-check
-        = form.radio_button :role, :chef, id: :chefRole, class: 'form-check-input'
-        = form.label :role, 'Chef', class: 'form-check-label', for: :chefRole
+            %div.form-check
+              = form.radio_button :role, :client, id: :clientRole, class: 'form-check-input'
+              = form.label :role, 'Client', class: 'form-check-label', for: :clientRole
+            %div.form-check
+              = form.radio_button :role, :chef, id: :chefRole, class: 'form-check-input'
+              = form.label :role, 'Chef', class: 'form-check-label', for: :chefRole
 
-      %div.form-group
-      = form.submit 'Sign Up', class: 'btn btn-primary btn-block'
+            %div.form-group
+            = form.submit 'Sign Up', class: 'btn btn-primary btn-block'
