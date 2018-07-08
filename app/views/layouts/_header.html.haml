@@ -1,7 +1,8 @@
 
 %header.container-fluid.header
   %div.header__left
-    %h1.header__title
-      Tiffin
+    = link_to root_path, class: "header__home" do
+      %h1.header__title
+        Tiffin
   %div.header__right
     = render 'layouts/account'
