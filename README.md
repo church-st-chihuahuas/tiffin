@@ -99,7 +99,7 @@ The product is a mobile and web-based tool for building community by making trus
 
 
 #### GitHub Repo
-https://github.com/melonistic/tiffin
+https://github.com/church-st-chihuahuas/tiffin
 
 #### Rationale for Ordering PBIs
 The PBIs were ordered such that we could satisfy the stakeholder's bare minimum requirements for her product vision.  In other words, the product has to, at a minimum, enable trusted connections between chefs and clients by allowing them to post and edit information about themselves, their abilities, and desires.  Then, it has to enable clients to place orders.  Then, it has to enable chefs and clients to review each other.  Then, it has to enable automated payments through the application.  Finally, it needs to enable special orders and event catering once we have demonstrated the most basic functionality.
@@ -175,9 +175,11 @@ July 5:
 
 - Santiago - [last 24] During mob programming, introduced controllers and model rails generators to the team, reviewed activerecord enum, which provides wonderful DSLs. [next 24] learn about feature testing; figure out better ways to impart knowledge on Rails to the team, [impediments] flash messages not working ;
 
-July 6:
+July 6:  9:15 pm on 06 July 2018
 
-- Andrew - [last 24], [next 24], [impediments]
+- Andrew - [Last 24] Sprint Review, Sprint Retrospective, Sprint Planning, Seed data, Email validation, beginning TDD on Chef object
+           [Next 24] CI/CD, Display Chef’s Repertoire
+           [Impediments] Learning CI/CD technology stack
 
 - Samir - [last 24], [next 24], [impediments]
 
@@ -187,9 +189,12 @@ July 6:
 
 - Christopher - [last 24] Participated in sprint planning for Sprint 2, [next 24] Begin work on chef display ticket, star any required UI work if possible, [impediments] None.
 
-July 7:
+July 7:  3:00 pm on 07 July 2018
 
-- Andrew - [last 24], [next 24], [impediments]
+- Andrew -  [Last 24]  Created model for meals, dietary accommodations, cuisines, and certifications; created tests for all three; created seed data for application; solved duplicate email test error
+            [Next 24] Display all chef data, including meals; work on filtered search for chefs
+            [Impediments] lack of knowledge of how ransack/solar work for search, which I plan to correct on working on them
+           
 
 - Samir - [last 24], [next 24], [impediments]
 
@@ -198,3 +203,13 @@ July 7:
 - Santiago - [last 24], [next 24], [impediments]
 
 - Christopher - [last 24] Paired with Santiago to complete login and session UI workflow, [next 24] Work with Santiago to complete UI workflow, and then begin mobbing the chef display data, [impediments] None
+
+Forecast of Velocity: 40 Story Points per Sprint
+
+Rationale for Velocity: ...
+
+Half-velocity is 20 Story Points; all stories are less than or equal to 20 Story Points.
+
+Evidence of sprint review with stakeholder...
+
+Sprint Burndown Chart:  https://docs.google.com/spreadsheets/d/1Q_-6bn4_5w1KV7-V4WFQj1mvH3sGo3V6bvEE7MRG1zk/edit#gid=0
