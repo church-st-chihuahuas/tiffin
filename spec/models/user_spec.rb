@@ -29,7 +29,7 @@ describe User do
   describe '#authenticate' do
 
     context 'when password is valid' do
-      subject {user.authenticate("hello")}
+      subject {user.authenticate(user.password)}
       it { is_expected.to be_truthy }
     end
 

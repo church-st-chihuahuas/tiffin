@@ -1,15 +1,23 @@
 FactoryBot.define do
   factory :user do
-    first_name 'Anupama'
-    last_name 'Mustermann'
-    password 'hello'
-    email 'handle@tiffin.com'
-    role 'client'
-    contact_phone '555-555-1212'
-    street_address '1001 Mass Ave.'
-    city 'Cambridge'
+    first_name
+    last_name
+    email
+    sequence(:contact_phone, '555-555-0001')
+    street_address
+    city
     state 'MA'
-    zip_code '02138'
+    sequence(:zip_code, '00001')
+    password
+    client
+
+    trait :client do
+      role :client
+    end
+
+    trait :chef do
+      role :chef
+    end
   end
 end
 
