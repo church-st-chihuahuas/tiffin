@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  include Math
 
   validates :email,
             presence: true,
@@ -48,4 +49,18 @@ class User < ApplicationRecord
   geocoded_by :full_address   # can also be an IP address
   after_validation :geocode   # auto-fetch coordinates
 
+  def distance_to(other_user)
+    phi1 = self.latitude * Math::PI / 180
+    phi2 = other_user.latitude * Math::PI / 180
+    lambda1 = self.longitude * Math::PI / 180
+    lambda2 = other_user.longitude * Math::PI / 180
+
+    dphi = phi1 - phi2
+    dlambda = lambda1 - lambda2
+    arg = (Math.sin(dphi/2) ** 2) +
+        (Math.cos(phi1) * Math.cos(phi2)) * (Math.sin(dlambda/2) ** 2)
+    sqrt_arg = Math.sqrt(arg)
+    2 * 3959 * Math.asin(sqrt_arg)
+
+  end
 end
