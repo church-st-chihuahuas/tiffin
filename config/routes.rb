@@ -12,4 +12,5 @@ Rails.application.routes.draw do
     resource :chefs
   end
   resources :meals
+  resources :chefs, only: :index
 end

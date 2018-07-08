@@ -13,7 +13,7 @@ class MealsController < ApplicationController
                  .or(Meal.joins(:cuisine).includes(:cuisine)
                          .joins(:dietary_accommodation).includes(:dietary_accommodation)
                          .joins(:chef).includes(:chef)
-                         .where(short_name: keys))
+                         .where("short_name = ? OR description = ?", keys, keys))
   end
 
 end

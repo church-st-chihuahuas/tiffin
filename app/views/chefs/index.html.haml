@@ -1,0 +1,27 @@
+
+= form_for :report_form, method: :get do |f|
+  #report_filter
+    %table
+      %tr
+        %td
+          .field-set
+            .field.clearfix
+              .field-label.reports_label
+                Filter by:
+              = f.text_field :q
+  .controls
+    = f.submit 'Search'
+
+  %table
+    %tr
+      %th
+        Name
+      %th
+        Description
+
+    - @chefs.each do | chef |
+      %tr
+        %td
+          =User.find_by_id(chef.user_id).full_name
+        %td
+
