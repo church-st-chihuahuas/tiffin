@@ -18,7 +18,7 @@ class UsersController < ApplicationController
         redirect_to new_user_chefs_path(@user.id)
       end
     else
-      flash[:alert] = 'Unable to create user account.'
+      flash.now[:alert] = 'Unable to create user account.'
       render 'new'
     end
   end

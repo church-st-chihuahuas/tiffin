@@ -23,17 +23,22 @@
   %hr
 
   .row
-    .dietary-accommodations.col-md-6
+    .dietary-accommodations.col-md
       %strong Dietary Accommodations:
       - @chef.dietary_accommodation.each do |acc|
         .accommodation
           = acc.name
-    .certifications.col-md-6
+    .certifications.col-md
       %strong Certifications
       - @chef.certification.each do |cert|
         .certifiction
           = link_to(cert.url, target: '_blank') do
             = cert.name
+    .cuisines.col-md
+      %strong Cuisines
+      - @chef.cuisine.each do |cuisine|
+        .cuisine
+          = cuisine.name
 
 
   %hr
