@@ -17,7 +17,7 @@ describe UsersController do
         log_in(client)
 
         get :new
-        expect(response).to redirect_to(root_path)
+        expect(response).to redirect_to(user_home_path)
       end
     end
 
