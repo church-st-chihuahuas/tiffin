@@ -27,6 +27,8 @@ class User < ApplicationRecord
   validates :street_address, :city, :state, :zip_code,
             presence: true
 
+  validates_format_of :zip_code, :with => /\d{5}(-\d{4})?/, :message => "Invalid ZIP Code."
+
   has_one :chef
 
 

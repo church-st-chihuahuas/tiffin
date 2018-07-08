@@ -204,6 +204,13 @@ July 7:  3:00 pm on 07 July 2018
 
 - Christopher - [last 24] Paired with Santiago to complete login and session UI workflow, [next 24] Work with Santiago to complete UI workflow, and then begin mobbing the chef display data, [impediments] None
 
+July 8:  4:00 pm on 08 July 2018
+
+- Andrew -  [Last 24]  Pulled geocoords for addresses, completed model for meals, dietary accommodations, cuisines, and certifications
+            [Next 24] Incorporating distance search for chefs, connecting with stakeholder, preparing demo
+            [Impediments] Gem doesn’t allow direct testing, testing manual
+           
+
 Forecast of Velocity: 40 Story Points per Sprint
 
 Rationale for Velocity: ...

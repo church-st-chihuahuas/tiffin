@@ -14,7 +14,6 @@ describe User do
     it { is_expected.to validate_presence_of(:email) }
     it { is_expected.to validate_uniqueness_of(:email)}
     it { is_expected.to validate_presence_of(:password) }
-    # it { is_expected.to validate_confirmation_of(:password) }
     it { is_expected.to validate_presence_of(:role) }
     it { should define_enum_for(:role)}
     it { is_expected.to validate_presence_of(:first_name) }
@@ -24,8 +23,6 @@ describe User do
     it { is_expected.to validate_presence_of(:city) }
     it { is_expected.to validate_presence_of(:state) }
     it { is_expected.to validate_presence_of(:zip_code) }
-    # it { is_expected.to validate_presence_of(:latitude) }
-    # it { is_expected.to validate_presence_of(:longitude) }
   end
 
   describe '#authenticate' do
