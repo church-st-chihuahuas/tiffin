@@ -23,14 +23,6 @@ User.create([
                  contact_phone: '212-555-1216', street_address: 'Gryffindor Tower 3', city: 'Hogsmeade', state: 'Wales', zip_code: '92506', role: :client}
             ])
 
-Chef.create([{user_id: User.find_by_email('rubius@hogwarts.edu').id,
-              business_name: "Hagrid's Hot Dog Hut",
-              business_description: "We make hot dogs out of all the magical beasts you can imagine!"},
-             {user_id: User.find_by_email('severus@hogwarts.edu').id, business_name: "Snape's Slightly Poisonous Potions",
-              business_description: "Our potions are only slightly poisonous!"},
-             {user_id: User.find_by_email('kerry@tiffin.com').id, business_name: "Kerry's Kitchen",
-              business_description: "We serve up healthy meals for a variety of tastes and diets."}])
-
 Certification.create([{name: 'ServSafe', authority: 'ServSafe', url: "https://www.servsafe.com/ServSafe-Manager/Get-Certified"},
                       {name: 'Kosher', authority: 'OK', url: "http://www.ok.org/"},
                       {name: 'Halal', authority: 'USA Halal Chamber of Commerce', url: "http://www.ushalalcertification.com/"}])
@@ -38,6 +30,20 @@ Certification.create([{name: 'ServSafe', authority: 'ServSafe', url: "https://ww
 DietaryAccommodation.create([{name: 'vegetarian'}, {name: 'gluten free'}, {name: 'vegan'}, {name: 'kosher'}, {name: 'halal'}])
 
 Cuisine.create([{name: 'Indian'}, {name: 'Chinese'}, {name: 'Mexican'}, {name: 'Italian'}, {name: 'American'}, {name: 'Middle Eastern'}])
+
+Chef.create([{user_id: User.find_by_email('rubius@hogwarts.edu').id,
+              business_name: "Hagrid's Hot Dog Hut",
+              business_description: "We make hot dogs out of all the magical beasts you can imagine!"},
+             {user_id: User.find_by_email('severus@hogwarts.edu').id, business_name: "Snape's Slightly Poisonous Potions",
+              business_description: "Our potions are only slightly poisonous!"},
+             {user_id: User.find_by_email('kerry@tiffin.com').id, business_name: "Kerry's Kitchen",
+              business_description: "We serve up healthy meals for a variety of tastes and diets."}]) do |chef|
+  chef.cuisine << Cuisine.find_by_name('Indian')
+  chef.cuisine << Cuisine.find_by_name('Middle Eastern')
+  chef.dietary_accommodation << DietaryAccommodation.find_by_name('vegetarian')
+  chef.dietary_accommodation << DietaryAccommodation.find_by_name('kosher')
+  chef.certification << Certification.find_by_authority('OK')
+end
 
 Meal.create([{chef: Chef.first, short_name: 'Chana Masala', description: 'Chickpeas in Masala sauce.'}]) do |meal|
   meal.cuisine << Cuisine.find_by_name('Indian')
