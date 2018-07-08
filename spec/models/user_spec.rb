@@ -26,23 +26,10 @@ describe User do
     it { is_expected.to validate_presence_of(:zip_code) }
   end
 
-  # we need to look at this test and figure out
-  # why it's passing when we think it should fail
-  # context 'when email address is already taken' do
-  #   before do
-  #     user_with_same_email = user.dup
-  #     user_with_same_email.save
-  #
-  #   end
-  #
-  #   it { is_expected.to_not be_valid }
-  # end
-
   describe '#authenticate' do
 
     context 'when password is valid' do
       subject {user.authenticate("hello")}
-
       it { is_expected.to be_truthy }
     end
 

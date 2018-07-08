@@ -24,3 +24,6 @@
 
 # Ignore the Rubymine project folder
 /.idea
+
+.env
+vendor/

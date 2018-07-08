@@ -1,16 +1,18 @@
 .container
   .row
-    %h1
-      Chef Page
+    .col
+      %h1
+        Chef Page
 
   %hr
 
   .row
-    %h2
-      = @chef.user.full_name
+    .col
+      %h2
+        = @chef.user.full_name
 
   .row
-    .business
+    .col.business
 
       .business-name
         %strong= @chef.business_name
@@ -21,7 +23,28 @@
   %hr
 
   .row
-    .meals
+    .dietary-accommodations.col-md
+      %strong Dietary Accommodations:
+      - @chef.dietary_accommodation.each do |acc|
+        .accommodation
+          = acc.name
+    .certifications.col-md
+      %strong Certifications
+      - @chef.certification.each do |cert|
+        .certifiction
+          = link_to(cert.url, target: '_blank') do
+            = cert.name
+    .cuisines.col-md
+      %strong Cuisines
+      - @chef.cuisine.each do |cuisine|
+        .cuisine
+          = cuisine.name
+
+
+  %hr
+
+  .row
+    .col.meals
       %h3 Meals Offered
 
       .row
