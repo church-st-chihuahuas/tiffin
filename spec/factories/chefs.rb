@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :chef do
-    user
+    association :user, factory: %i[user chef]
     business_name
     business_description 'I make food'
   end
