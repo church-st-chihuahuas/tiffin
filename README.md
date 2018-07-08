@@ -213,7 +213,7 @@ July 8:  4:00 pm on 08 July 2018
 
 Forecast of Velocity: 40 Story Points per Sprint
 
-Rationale for Velocity: ...
+Rationale for Velocity: While Yesterday's Weather would indicate that our velocity should be 24 story points per sprint, we have overcome many of the technical hurdles we encountered during the first sprint and have established a working framework.  We therefore believe we can forecast 40 points for this sprint.
 
 Half-velocity is 20 Story Points; all stories are less than or equal to 20 Story Points.
 
