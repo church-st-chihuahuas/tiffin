@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
   def check_signed_in
     if logged_in?
       if current_user.chef?
-        redirect_to chef_home_path
+        redirect_to user_chefs_path(current_user)
       else
         redirect_to user_home_path
       end

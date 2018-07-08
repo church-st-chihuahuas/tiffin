@@ -1,4 +1,7 @@
 class ChefsController < ApplicationController
+
+  before_action :require_login, except: [:new, :create]
+
   def new
     @user = User.find_by(id: params[:user_id])
     @chef = Chef.new(user: @user)
@@ -11,8 +14,8 @@ class ChefsController < ApplicationController
     end
     if @chef.save
       flash.now[:alert] = 'Successfully created chef account.'
-      log_in(@user)
-      redirect_to chef_home_path
+      log_in(user)
+      redirect_to user_chefs_path(user)
     else
       flash.now[:alert] = 'Unable to create chef account.'
       render :new

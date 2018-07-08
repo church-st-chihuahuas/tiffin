@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       log_in(user)
       if user.chef?
-        redirect_to chef_home_path
+        redirect_to user_chefs_path(user)
       else
         redirect_to user_home_path
       end
