@@ -30,7 +30,7 @@ class User < ApplicationRecord
   validates :contact_phone,
             presence: true
 
-  validates :street_address, :city, :state, :zip_code,
+  validates :street_address, :city, :state, :zip_code, :latitude, :longitude,
             presence: true
 
   has_one :chef

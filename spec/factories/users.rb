@@ -10,6 +10,8 @@ FactoryBot.define do
     sequence(:zip_code, '00001')
     password
     client
+    latitude 42.38
+    longitude -71.2
 
     trait :client do
       role :client

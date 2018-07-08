@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_07_213540) do
+ActiveRecord::Schema.define(version: 2018_07_08_165446) do
 
   create_table "active_admin_comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "namespace"
@@ -100,6 +100,8 @@ ActiveRecord::Schema.define(version: 2018_07_07_213540) do
     t.string "city"
     t.string "state"
     t.string "zip_code"
+    t.float "latitude"
+    t.float "longitude"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
