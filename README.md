@@ -219,4 +219,6 @@ Half-velocity is 20 Story Points; all stories are less than or equal to 20 Story
 
 Evidence of sprint review with stakeholder...
 
+Evidence of mob/pair programming: MobProgramming_07_July.jpg, MobProgramming_08_July.jpg
+
 Sprint Burndown Chart:  https://docs.google.com/spreadsheets/d/1Q_-6bn4_5w1KV7-V4WFQj1mvH3sGo3V6bvEE7MRG1zk/edit#gid=0
