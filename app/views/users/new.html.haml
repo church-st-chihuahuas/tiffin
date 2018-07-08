@@ -37,6 +37,10 @@
         = form.label :password, class: :required
         = form.password_field :password, class: 'form-control'
 
+      %div.form-group
+        = form.label :password_confirmation, class: :required
+        = form.password_field :password_confirmation, class: 'form-control'
+
       %div.form-check
         = form.radio_button :role, :client, id: :clientRole, class: 'form-check-input'
         = form.label :role, 'Client', class: 'form-check-label', for: :clientRole
