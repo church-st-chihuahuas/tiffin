@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+
   validates :email,
             presence: true,
             format: {
@@ -23,10 +24,12 @@ class User < ApplicationRecord
   validates :first_name, :last_name, :contact_phone,
             presence: true
 
-  validates :street_address, :city, :state, :zip_code, :latitude, :longitude,
+  validates :street_address, :city, :state, :zip_code,
             presence: true
 
   has_one :chef
+
+
 
   def authenticate(password)
     password == self.password
@@ -39,5 +42,8 @@ class User < ApplicationRecord
   def full_address
     "#{self.street_address}, #{self.city}, #{self.state}, #{self.zip_code}"
   end
+
+  geocoded_by :full_address   # can also be an IP address
+  after_validation :geocode   # auto-fetch coordinates
 
 end

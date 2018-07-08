@@ -24,8 +24,8 @@ describe User do
     it { is_expected.to validate_presence_of(:city) }
     it { is_expected.to validate_presence_of(:state) }
     it { is_expected.to validate_presence_of(:zip_code) }
-    it { is_expected.to validate_presence_of(:latitude) }
-    it { is_expected.to validate_presence_of(:longitude) }
+    # it { is_expected.to validate_presence_of(:latitude) }
+    # it { is_expected.to validate_presence_of(:longitude) }
   end
 
   describe '#authenticate' do
