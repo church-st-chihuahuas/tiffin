@@ -236,8 +236,10 @@ Sprint Burndown Chart:  https://docs.google.com/spreadsheets/d/1Q_-6bn4_5w1KV7-V
 
 Evidence of CI/CD:
 
+Badges are clickable
+
 Continuous Integration using SemephoreCI: [![Build Status](https://semaphoreci.com/api/v1/eparker71-66/tiffin/branches/master/shields_badge.svg)](https://semaphoreci.com/eparker71-66/tiffin)
 
-Continuous Delivery using Cloud66: [![Deploy Status](https://app.cloud66.com/stacks/badge/793bc9367f3a9ddc22f84f77c9fefb0d.svg)]()
+Continuous Delivery using Cloud66: [![Deploy Status](https://app.cloud66.com/stacks/badge/793bc9367f3a9ddc22f84f77c9fefb0d.svg)](https://app.cloud66.com/stacks/badge/793bc9367f3a9ddc22f84f77c9fefb0d.svg)
 
 Code Coverage using CodeCov: [![codecov](https://codecov.io/gh/church-st-chihuahuas/tiffin/branch/master/graph/badge.svg)](https://codecov.io/gh/church-st-chihuahuas/tiffin)
