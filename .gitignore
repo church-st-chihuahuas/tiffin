@@ -27,3 +27,4 @@
 
 .env
 vendor/
+coverage/
