@@ -1,27 +1,27 @@
+.container.page-content
+  = form_for :report_form, method: :get do |f|
+    #report_filter
+      %table
+        %tr
+          %td
+            .field-set
+              .field.clearfix
+                .field-label.reports_label
+                  Filter by:
+                = f.text_field :q
+    .controls
+      = f.submit 'Search'
 
-= form_for :report_form, method: :get do |f|
-  #report_filter
     %table
       %tr
-        %td
-          .field-set
-            .field.clearfix
-              .field-label.reports_label
-                Filter by:
-              = f.text_field :q
-  .controls
-    = f.submit 'Search'
+        %th
+          Name
+        %th
+          Description
 
-  %table
-    %tr
-      %th
-        Name
-      %th
-        Description
-
-    - @meals.each do | meal |
-      %tr
-        %td
-          =meal.short_name
-        %td
-          =meal.description
+      - @meals.each do | meal |
+        %tr
+          %td
+            =meal.short_name
+          %td
+            =meal.description

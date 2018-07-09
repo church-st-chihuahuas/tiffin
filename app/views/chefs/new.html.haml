@@ -1,16 +1,17 @@
-%h1 Sign Up To Be A Chef!
+.container.page-content
+  %h2 Tell us more about your business.
 
-.errors
-  = render 'shared/form_errors', resource: @chef
+  .errors
+    = render 'shared/form_errors', resource: @chef
 
-.row.justify-content-center
-  .col
-    = form_for [@chef.user, @chef] do |form|
-      .form-group
-        = form.label :business_name, class: :required
-        = form.text_field :business_name, class: [:focus, 'form-control']
-      .form-group
-        = form.label :business_description, class: :required
-        = form.text_field :business_description, class: 'form-control'
-      .form-group
-        = form.submit 'Sign Up To Be a Chef', class: ['btn btn-primary', 'form-control']
+  .row.justify-content-center
+    .col
+      = form_for [@chef.user, @chef] do |form|
+        .form-group
+          = form.label :business_name, class: :required
+          = form.text_field :business_name, class: [:focus, 'form-control']
+        .form-group
+          = form.label :business_description, class: :required
+          = form.text_field :business_description, class: 'form-control'
+        .form-group
+          = form.submit 'Sign Up To Be a Chef', class: ['btn btn-primary', 'form-control']

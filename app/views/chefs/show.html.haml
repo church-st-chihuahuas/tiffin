@@ -1,11 +1,4 @@
-.container
-  .row
-    .col
-      %h1
-        Chef Page
-
-  %hr
-
+.container.page-content
   .row
     .col
       %h2
@@ -24,7 +17,7 @@
 
   .row
     .dietary-accommodations.col-md
-      %strong Dietary Accommodations:
+      %strong Dietary Accommodations
       - @chef.dietary_accommodation.each do |acc|
         .accommodation
           = acc.name

@@ -4,5 +4,11 @@
 
 .sign-up__box {
   max-width: 500px;
-  padding: 30px 100px;
+  padding: 30px 20px;
+  margin: 0 auto;
+
+  form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
