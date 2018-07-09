@@ -185,7 +185,9 @@ July 6:  9:15 pm on 06 July 2018
 
 - Samir - [last 24], [next 24], [impediments]
 
-- Eric - [last 24], [next 24], [impediments]
+- Eric - [last 24] Particiapated in Sprint planning, planning poker, mob programming, daily scrum,
+         [next 24] research for search, CI/CD, mobbing, daily scrum,
+         [impediments]
 
 - Santiago - [last 24], [next 24], [impediments]
 
@@ -200,7 +202,9 @@ July 7:  3:00 pm on 07 July 2018
 
 - Samir - [last 24], [next 24], [impediments]
 
-- Eric - [last 24], [next 24], [impediments]
+- Eric - [last 24] CI/CD implementation, daily scrum, mobbing
+         [next 24] CD/CD implementation cont., daily scrum, mobbing
+         [impediments]
 
 - Santiago - [last 24], [next 24], [impediments]
 
@@ -213,7 +217,10 @@ July 8:  4:00 pm on 08 July 2018
             [Impediments] Gem doesn’t allow direct testing, testing manual
             
 - Christopher - [Last 24] Finished pair programming login and session management, added logo and links to home page, pair programmed chef display and search, [Next 24] Continue pair programming chef display and search, add tests for chef login and session management, [Impediments] None.
-           
+
+- Eric - [last 24] CI/CD working, badges added to readme, daily scrum, mobbing, 
+         [next 24] finalize CI/CD if time, add deploy build badge to readme, join stakeholder meeting, daily scrum, 
+         [impediments]           
 
 Forecast of Velocity: 40 Story Points per Sprint
 
