@@ -222,13 +222,13 @@ July 8:  4:00 pm on 08 July 2018
          [next 24] finalize CI/CD if time, add deploy build badge to readme, join stakeholder meeting, daily scrum, 
          [impediments]           
 
-Forecast of Velocity: 40 Story Points per Sprint
+Forecast of Velocity: 40 Story Points per Sprint; we added another 8 Story Points mid-sprint for a total of 48
 
 Rationale for Velocity: While Yesterday's Weather would indicate that our velocity should be 24 story points per sprint, we have overcome many of the technical hurdles we encountered during the first sprint and have established a working framework.  We therefore believe we can forecast 40 points for this sprint.
 
-Half-velocity is 20 Story Points; all stories are less than or equal to 20 Story Points.
+Half-velocity is 24 Story Points; all stories are less than 24 Story Points.
 
-Evidence of sprint review with stakeholder...
+Evidence of sprint review with stakeholder: sprint_review_09July2018.png
 
 Evidence of mob/pair programming: MobProgramming_07_July.jpg, MobProgramming_08_July.jpg
 
