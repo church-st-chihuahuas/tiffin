@@ -185,11 +185,13 @@ July 6:  9:15 pm on 06 July 2018
 
 - Samir - [last 24] Sprint review, retrospective, and sprint 2 planning (including planning poker to revise estimates of adjusted PBIs); begin working on chef model [next 24] Figure out CI/CD services, flesh out remaining models and relationships, begin chef homepage/meal listing [impediments] Auto-generated factory file preventing me from writing tests for chef model
 
-- Eric - [last 24] Particiapated in Sprint planning, planning poker, mob programming, daily scrum,
+- Eric - [last 24] Participated in Sprint planning, planning poker, mob programming, daily scrum,
          [next 24] research for search, CI/CD, mobbing, daily scrum,
          [impediments]
 
-- Santiago - [last 24], [next 24], [impediments]
+- Santiago - [last 24] Participated in kicking of the sprint by planning poker, mob programming prototypes, 
+             [next 24] , 
+             [impediments] NONE
 
 - Christopher - [last 24] Participated in sprint planning for Sprint 2, [next 24] Begin work on chef display ticket, star any required UI work if possible, [impediments] None.
 
@@ -204,9 +206,11 @@ July 7:  3:00 pm on 07 July 2018
 
 - Eric - [last 24] CI/CD implementation, daily scrum, mobbing
          [next 24] CD/CD implementation cont., daily scrum, mobbing
-         [impediments]
+         [impediments] 
 
-- Santiago - [last 24], [next 24], [impediments]
+- Santiago - [last 24], Revisited the implementation of the session management. Moved biz logic to helpers, thus de-cluttered views. Learnt important lessons in testing
+            [next 24], The workflow for registrations was improved and implemented.
+            [impediments] NONE
 
 - Christopher - [last 24] Paired with Santiago to complete login and session UI workflow, [next 24] Work with Santiago to complete UI workflow, and then begin mobbing the chef display data, [impediments] None
 
@@ -222,7 +226,11 @@ July 8:  4:00 pm on 08 July 2018
 
 - Eric - [last 24] CI/CD working, badges added to readme, daily scrum, mobbing, 
          [next 24] finalize CI/CD if time, add deploy build badge to readme, join stakeholder meeting, daily scrum, 
-         [impediments]           
+         [impediments]    
+         
+- Santiago - [last 24] improved factories by adding sequences; prototyped activerecord queries for the Meal search; lessons can be used for Chef search. Started implementation for the controllers and views for the Meal search form., 
+             [next 24] Move activerecord queries for Chef and Meal into scope, so the code is DRY. Scope a easier to test and can be merged other scopes., 
+             [impediments] None                
 
 Forecast of Velocity: 40 Story Points per Sprint; we added another 8 Story Points mid-sprint for a total of 48
 
