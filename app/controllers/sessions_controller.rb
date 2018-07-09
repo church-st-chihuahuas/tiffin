@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
         redirect_to user_home_path
       end
     else
-      flash[:alert] = 'Unable to login: email or password are incorrect'
+      flash.now[:alert] = 'Unable to login: email or password are incorrect'
       render 'new'
     end
   end
