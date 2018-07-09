@@ -1,6 +1,8 @@
 [![Build Status](https://semaphoreci.com/api/v1/eparker71-66/tiffin/branches/master/badge.svg)](https://semaphoreci.com/eparker71-66/tiffin)
 
-[![Build Status](https://semaphoreci.com/api/v1/eparker71-66/tiffin/branches/master/shields_badge.svg)](https://semaphoreci.com/eparker71-66/tiffin)
+
+![Deploy Status](https://app.cloud66.com/stacks/badge/793bc9367f3a9ddc22f84f77c9fefb0d.svg)
+
 
 ## Team Info
 
