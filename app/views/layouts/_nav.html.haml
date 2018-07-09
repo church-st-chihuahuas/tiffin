@@ -1,0 +1,7 @@
+.header__right
+  %nav.header-nav
+    - if current_user
+      .header-nav__item
+        = link_to 'Find Chefs', chefs_path
+    .header-nav__item
+      = create_signin_link

@@ -1,7 +1,7 @@
 
 .header {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  width: 100%;
+  padding: 16px 20px;
   height: 5rem;
   border-bottom: 1px solid #d9d9d9;
   box-shadow: 0 3px 3px #d9d9d9;
@@ -32,6 +32,15 @@
 
 .header__offset {
   padding-top: 80px
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-nav__item {
+  margin: 0 20px;
 }
 
 a, a.link, a:visited, a:hover {

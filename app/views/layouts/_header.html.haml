@@ -1,11 +1,10 @@
 
-%header.container-fluid.header
-  %div.header__left
+%header.header
+  .header__left
     = link_to root_path, class: "header__home" do
       = image_tag('lunchbox.svg', class: 'header__image')
-  %div.header__left
+  .header__left
     = link_to root_path, class: "header__home" do
       %h1.header__title
         Tiffin
-  %div.header__right
-    = render 'layouts/account'
+  = render 'layouts/nav'
