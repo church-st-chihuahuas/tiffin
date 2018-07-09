@@ -247,3 +247,11 @@ Continuous Integration using SemephoreCI: [![Build Status](https://semaphoreci.c
 Continuous Delivery using Cloud66: [![Deploy Status](https://app.cloud66.com/stacks/badge/793bc9367f3a9ddc22f84f77c9fefb0d.svg)](https://app.cloud66.com/stacks/badge/793bc9367f3a9ddc22f84f77c9fefb0d.svg)
 
 Code Coverage using CodeCov: [![codecov](https://codecov.io/gh/church-st-chihuahuas/tiffin/branch/master/graph/badge.svg)](https://codecov.io/gh/church-st-chihuahuas/tiffin)
+
+The CI/CD process described:
+
+When code is checked into the master branch in github it is immediately detected by SemaphoreCI where it is built 
+and tests are run. If all the tests pass, the code is then deployed to Cloud66 into the production server. We do not 
+have tests that run between Semaphore and Cloud66 on a stage environment yet, it's not clear how to do that 
+with these services. We are currently exploring alternatives.
+
