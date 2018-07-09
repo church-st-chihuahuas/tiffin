@@ -1,27 +1,25 @@
 .container.page-content
-  = form_for :report_form, method: :get do |f|
-    #report_filter
-      %table
-        %tr
-          %td
-            .field-set
-              .field.clearfix
-                .field-label.reports_label
-                  Filter by:
-                = f.text_field :q
-    .controls
-      = f.submit 'Search'
+  %h2 Find Chefs
+  .row
+    .col-sm
+      = form_for :report_form, method: :get do |f|
+        .form-group
+          = f.label 'Filter by keywords:'
+        .form-group
+          = f.text_field :q
+          = f.submit 'Search', class: 'btn btn-primary'
 
-    %table
-      %tr
-        %th
-          Name
-        %th
-          Description
-
-      - @chefs.each do | chef |
-        %tr
-          %td
-            =User.find_by_id(chef.user_id).full_name
-          %td
-
+      - if @chefs.length == 0
+        %p No results available.
+      - else
+        - @chefs.each do | chef |
+          .card
+            .card-header
+              = User.find_by_id(chef.user_id).full_name
+            .card-body
+              %h3.card-title
+                = chef.business_name
+              %p.card-text
+                = chef.business_description
+            .card-body
+              = link_to 'View Profile', user_chefs_path(User.find_by_id(chef.user_id)), class: 'btn btn-primary'
