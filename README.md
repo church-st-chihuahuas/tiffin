@@ -258,8 +258,5 @@ Code Coverage using CodeCov: [![codecov](https://codecov.io/gh/church-st-chihuah
 
 The CI/CD process described:
 
-When code is checked into the master branch in github it is immediately detected by SemaphoreCI where it is built 
-and tests are run. If all the tests pass, the code is then deployed to Cloud66 into the production server. We do not 
-have tests that run between Semaphore and Cloud66 on a stage environment yet, it's not clear how to do that 
-with these services. We are currently exploring alternatives.
+When the code is checked into the master branch in GitHub, it is immediately detected by SemaphoreCI where it is built, and tests are run. If all the tests pass, the code is then deployed to Cloud66 into the production server. We do not have tests that run between Semaphore and Cloud66 on a stage environment yet, and it's not clear how to do that with these services. We are currently exploring alternatives.
 
