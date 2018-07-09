@@ -183,7 +183,7 @@ July 6:  9:15 pm on 06 July 2018
            [Next 24] CI/CD, Display Chef’s Repertoire
            [Impediments] Learning CI/CD technology stack
 
-- Samir - [last 24], [next 24], [impediments]
+- Samir - [last 24] Sprint review, retrospective, and sprint 2 planning (including planning poker to revise estimates of adjusted PBIs); begin working on chef model [next 24] Figure out CI/CD services, flesh out remaining models and relationships, begin chef homepage/meal listing [impediments] Auto-generated factory file preventing me from writing tests for chef model
 
 - Eric - [last 24] Particiapated in Sprint planning, planning poker, mob programming, daily scrum,
          [next 24] research for search, CI/CD, mobbing, daily scrum,
@@ -200,7 +200,7 @@ July 7:  3:00 pm on 07 July 2018
             [Impediments] lack of knowledge of how ransack/solar work for search, which I plan to correct on working on them
            
 
-- Samir - [last 24], [next 24], [impediments]
+- Samir - [last 24] Finished defining and testing models and relationships between them; Built chef view displaying all fields and relationships for a chef [next 24] Implement geocoding of addresses and distance calculations for chefs and clients [impediments] N/A
 
 - Eric - [last 24] CI/CD implementation, daily scrum, mobbing
          [next 24] CD/CD implementation cont., daily scrum, mobbing
@@ -215,7 +215,9 @@ July 8:  4:00 pm on 08 July 2018
 - Andrew -  [Last 24]  Pulled geocoords for addresses, completed model for meals, dietary accommodations, cuisines, and certifications
             [Next 24] Incorporating distance search for chefs, connecting with stakeholder, preparing demo
             [Impediments] Gem doesn’t allow direct testing, testing manual
-            
+
+- Samir -   [last 24] Integrated geocoding API that saves latitude and longitude on user creation, incorporated test of geocoding into SessionsController tests [next 24] Display distance to each chef in search results [impediments] N/A
+
 - Christopher - [Last 24] Finished pair programming login and session management, added logo and links to home page, pair programmed chef display and search, [Next 24] Continue pair programming chef display and search, add tests for chef login and session management, [Impediments] None.
 
 - Eric - [last 24] CI/CD working, badges added to readme, daily scrum, mobbing, 
@@ -228,9 +230,11 @@ Rationale for Velocity: While Yesterday's Weather would indicate that our veloci
 
 Half-velocity is 24 Story Points; all stories are less than 24 Story Points.
 
-Evidence of sprint review with stakeholder: sprint_review_09July2018.png
+[Evidence of sprint review with stakeholder](sprint_review_09July2018.png)
 
-Evidence of mob/pair programming: MobProgramming_07_July.jpg, MobProgramming_08_July.jpg
+Evidence of mob/pair programming:
+[July 7](MobProgramming_07_July.jpg)
+[July 8](MobProgramming_08_July.jpg)
 
 Sprint Burndown Chart:  https://docs.google.com/spreadsheets/d/1Q_-6bn4_5w1KV7-V4WFQj1mvH3sGo3V6bvEE7MRG1zk/edit#gid=0
 
