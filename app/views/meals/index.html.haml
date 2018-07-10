@@ -1,35 +1,22 @@
 .container.page-content
-  = form_for :report_form, method: :get do |f|
-    #report_filter
-      %table
-        %tr
-          %td
-            .field-set
-              .field.clearfix
-                .field-label.reports_label
-                  Filter by:
-                = f.text_field :q
-    .controls
-      = f.submit 'Search'
+  %table
+    %tr
+      %th
+        Name
+      %th
+        Description
+      %th
+        Actions
 
-    %table
+    - @meals.each do | meal |
       %tr
-        %th
-          Name
-        %th
-          Description
-        %th
-          Actions
-
-      - @meals.each do | meal |
-        %tr
-          %td
-            = link_to meal.short_name, meal_path(meal)
-          %td
-            = meal.description
-          %td
-            = link_to 'Edit', edit_meal_path(meal), class: 'btn btn-default'
-            %br
-            = link_to 'Delete', meal_path(meal), {method: :delete, confirm: 'Are you sure?', class: 'btn btn-default'}
+        %td
+          = link_to meal.short_name, meal_path(meal)
+        %td
+          = meal.description
+        %td
+          = link_to 'Edit', edit_meal_path(meal), class: 'btn btn-default'
+          %br
+          = link_to 'Delete', meal_path(meal), {method: :delete, confirm: 'Are you sure?', class: 'btn btn-default'}
 
   = link_to 'Add', new_chef_meal_path(), class: 'btn btn-default'
