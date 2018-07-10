@@ -22,6 +22,7 @@
       - @meals.each do | meal |
         %tr
           %td
-            =meal.short_name
+            = link_to meal.short_name, meal_path(meal)
           %td
             =meal.description
+

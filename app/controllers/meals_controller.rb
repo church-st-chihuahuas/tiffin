@@ -20,7 +20,8 @@ class MealsController < ApplicationController
   end
 
   def edit
-
+    @meal = Meal.find_by(id: params[:id])
+    raise ActiveRecord::RecordNotFound unless @meal
   end
 
   def update
@@ -28,6 +29,8 @@ class MealsController < ApplicationController
   end
 
   def destroy
+    @meal = Meal.find_by(id: params[:id])
+    raise ActiveRecord::RecordNotFound unless @meal
 
   end
 
