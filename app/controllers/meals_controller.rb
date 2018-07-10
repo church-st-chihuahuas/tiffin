@@ -16,8 +16,34 @@ class MealsController < ApplicationController
                          .where("short_name = ? OR description = ?", keys, keys))
   end
 
+  def new
+
+  end
+
   def create
 
+  end
+
+  def show
+    @meal = Meal.find_by(id: params[:meal_id])
+    raise ActiveRecord::RecordNotFound unless @meal
+  end
+
+  def edit
+
+  end
+
+  def update
+
+  end
+
+  def delete
+
+  end
+
+  def meal_params
+    params.require(:meal)
+        .permit(:short_name, :description)
   end
 
 end
