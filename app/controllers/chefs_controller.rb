@@ -11,7 +11,7 @@ class ChefsController < ApplicationController
       "description LIKE '%#{key}%'"
     end
     like_string = like_array.join(' OR ')
-byebug
+
     @chefs = Chef.for_clients.where(cuisines: { name: keys })
                  .or(Chef.for_clients.where(dietary_accommodations: { name: keys }))
                  .or(Chef.for_clients.where(like_string))
