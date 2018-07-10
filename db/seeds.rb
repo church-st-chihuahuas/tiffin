@@ -27,7 +27,16 @@ User.create([
                  state: 'MA', zip_code: '02138', role: :client},
                 {first_name: 'Ron', last_name: 'Weasley', email: 'ron@hogwarts.edu', password: 'harry',
                  contact_phone: '212-555-1216', street_address: '1007 Massachusetts Ave.', city: 'Cambridge',
-                 state: 'MA', zip_code: '02138', role: :client}
+                 state: 'MA', zip_code: '02138', role: :client},
+                {first_name: 'Luna', last_name: 'Lovegood', email: 'luna@hogwarts.edu', password: 'harry',
+                 contact_phone: '212-555-1217', street_address: '319 Broadway', city: 'Arlington',
+                 state: 'MA', zip_code: '02474', role: :chef},
+                {first_name: 'Neville', last_name: 'Longbottom', email: 'neville@hogwarts.edu', password: 'harry',
+                 contact_phone: '212-555-1218', street_address: '135 Adams St.', city: 'Quincy',
+                 state: 'MA', zip_code: '02169', role: :chef},
+                {first_name: 'Jack', last_name: 'Abby', email: 'jack@abby.com', password: 'harry',
+                 contact_phone: '212-555-1219', street_address: '100 Clinton St.', city: 'Framingham',
+                 state: 'MA', zip_code: '01702', role: :chef}
             ])
 
 Certification.create([{name: 'ServSafe', authority: 'ServSafe',
@@ -57,7 +66,20 @@ Chef.create([{user_id: User.find_by_email('severus@hogwarts.edu').id,
               business_description: "Our potions are only slightly poisonous!"},
              {user_id: User.find_by_email('kerry@tiffin.com').id,
               business_name: "Kerry's Kitchen",
-              business_description: "We serve up healthy meals for a variety of tastes and diets."}])
+              business_description: "We serve up healthy meals for a variety of tastes and diets.",
+              cuisine: [Cuisine.first, Cuisine.second, Cuisine.third]},
+             {user_id: User.find_by_email('luna@hogwarts.edu').id,
+              business_name: "Luna's Moon Pies",
+              business_description: "Loony moon pies filled with wonder.",
+              cuisine: [Cuisine.first, Cuisine.second, Cuisine.third]},
+             {user_id: User.find_by_email('neville@hogwarts.edu').id,
+              business_name: "Neville's Nosherei",
+              business_description: "Your home for kosher delights.",
+              cuisine: [Cuisine.first, Cuisine.second, Cuisine.third]},
+             {user_id: User.find_by_email('jack@abby.com').id,
+              business_name: "Jack's Abby Craft Lagers",
+              business_description: "Craft lagers for the discerning palate."},
+              cuisine: [Cuisine.first, Cuisine.second, Cuisine.third]])
 
 Meal.create([{chef: Chef.first, short_name: 'Chana Masala', description: 'Chickpeas in Masala sauce.'}]) do |meal|
   meal.cuisine << Cuisine.find_by_name('Indian')
