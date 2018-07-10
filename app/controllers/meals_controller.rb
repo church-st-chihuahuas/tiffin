@@ -1,12 +1,13 @@
 class MealsController < ApplicationController
 
+  before_action :find_chef, only: %i[index new create]
+
   def index
-    chef = Chef.find_by(id: params[:chef_id])
-    @meals = chef.meals
+    @meals = @chef.meals
   end
 
   def new
-
+    @meal = Meal.new(chef: @chef)
   end
 
   def create
@@ -33,6 +34,12 @@ class MealsController < ApplicationController
   def meal_params
     params.require(:meal)
         .permit(:short_name, :description)
+  end
+
+  private
+
+  def find_chef
+    @chef = Chef.find_by(id: params[:chef_id])
   end
 
 end
