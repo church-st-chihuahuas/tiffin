@@ -21,5 +21,7 @@
                 = chef.business_name
               %p.card-text
                 = chef.business_description
+              %p
+                = "Distance: #{chef.user.distance_to(@current_user).to_d.truncate(1)} miles"
             .card-body
               = link_to 'View Profile', user_chefs_path(User.find_by_id(chef.user_id)), class: 'btn btn-primary'
