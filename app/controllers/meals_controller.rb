@@ -16,4 +16,8 @@ class MealsController < ApplicationController
                          .where("short_name = ? OR description = ?", keys, keys))
   end
 
+  def create
+
+  end
+
 end

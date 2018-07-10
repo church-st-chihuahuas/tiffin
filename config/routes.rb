@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   resources :users do
     resource :chefs
   end
-  resources :meals
-  resources :chefs, only: :index
+  resources :chefs, only: :index, shallow: true do
+    resources :meals
+  end
 end
