@@ -246,10 +246,10 @@ Evidence of mob/pair programming:
 
 Sprint Burndown Chart:  https://docs.google.com/spreadsheets/d/1Q_-6bn4_5w1KV7-V4WFQj1mvH3sGo3V6bvEE7MRG1zk/edit#gid=0
 
-Evidence of CI/CD:
+Evidence of CI/CD: 
 
-[CI](CI.png)
-[CD](CD.png)
+[Screenshot of CI](CI.png)
+[Screenshot of CD](CD.png)
 
 Badges are clickable
 
