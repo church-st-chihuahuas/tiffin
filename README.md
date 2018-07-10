@@ -248,6 +248,9 @@ Sprint Burndown Chart:  https://docs.google.com/spreadsheets/d/1Q_-6bn4_5w1KV7-V
 
 Evidence of CI/CD:
 
+[CI](CI.png)
+[CD](CD.png)
+
 Badges are clickable
 
 Continuous Integration using SemephoreCI: [![Build Status](https://semaphoreci.com/api/v1/eparker71-66/tiffin/branches/master/shields_badge.svg)](https://semaphoreci.com/eparker71-66/tiffin)
@@ -262,4 +265,5 @@ When the code is checked into the master branch in GitHub, it is immediately det
 
 Production url: http://lynx.tiffin.c66.me/
 
-test
+
+
