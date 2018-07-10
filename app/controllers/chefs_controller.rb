@@ -36,6 +36,12 @@ class ChefsController < ApplicationController
                          .joins(:meal).includes(:meal)
                          .where(certifications: {name: keys}))
 
+    if params[:radius] != 'N/A'
+      @chefs = @chefs.select do |chef|
+        chef.user.distance_to(@current_user) <= params[:radius].to_f
+      end
+    end
+
   end
 
   def new

@@ -8,6 +8,9 @@
         .form-group
           = f.text_field :q
           = f.submit 'Search', class: 'btn btn-primary'
+        .form-group
+          = f.label 'Filter by distance (miles):'
+          = select_tag(:radius, options_for_select(['N/A', 1, 5, 10, 20, 50]))
 
       - if @chefs.length == 0
         %p No results available.
@@ -25,3 +28,5 @@
                 = "Distance: #{chef.user.distance_to(@current_user).to_d.truncate(1)} miles"
             .card-body
               = link_to 'View Profile', user_chefs_path(User.find_by_id(chef.user_id)), class: 'btn btn-primary'
+
+      %strong= @chefs_proximate
