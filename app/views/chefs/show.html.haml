@@ -41,7 +41,7 @@
       %h3 Meals Offered
 
       .row
-        - @chef.meal.each do |meal|
+        - @chef.meals.each do |meal|
           .col
             .card
               = image_tag('tiffin_cover.jpg', class: 'card-img-top')

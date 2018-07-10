@@ -3,16 +3,15 @@ require 'rails_helper'
 describe MealsController do
   include SessionsHelper
 
-  let(:client) {create :user}
+  let(:chef) {create :chef}
 
   before do
-    log_in(client)
+    log_in(chef.user)
   end
 
   describe "GET index" do
     it 'renders the index template' do
-      pending("this is failing")
-      get :index
+      get :index, params: {chef_id: chef.id}
       expect(response).to render_template('index')
     end
   end

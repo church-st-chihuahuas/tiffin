@@ -1,47 +1,27 @@
 class ChefsController < ApplicationController
 
-  before_action :require_login, except: [:new, :create]
+  before_action :require_login, except: %i[new create]
 
   def index
     keys = params[:report_form][:q].split() if params[:report_form]
-    unless keys
-      @chefs = []
-      return
-    end
+    @chefs = []
+    return unless keys
 
     like_array = keys.map do |key|
       "description LIKE '%#{key}%'"
     end
-    like_string = like_array.join(" OR ")
-
-
-    @chefs = Chef.joins(:cuisine).includes(:cuisine)
-                 .joins(:dietary_accommodation).includes(:dietary_accommodation)
-                 .joins(:certification).includes(:certification)
-                 .joins(:meal).includes(:meal)
-                 .where(cuisines: {name: keys})
-                 .or(Chef.joins(:cuisine).includes(:cuisine)
-                         .joins(:dietary_accommodation).includes(:dietary_accommodation)
-                         .joins(:certification).includes(:certification)
-                         .joins(:meal).includes(:meal)
-                         .where(dietary_accommodations: {name: keys}))
-                 .or(Chef.joins(:cuisine).includes(:cuisine)
-                         .joins(:dietary_accommodation).includes(:dietary_accommodation)
-                         .joins(:certification).includes(:certification)
-                         .joins(:meal).includes(:meal)
-                         .where(like_string))
-                 .or(Chef.joins(:cuisine).includes(:cuisine)
-                         .joins(:dietary_accommodation).includes(:dietary_accommodation)
-                         .joins(:certification).includes(:certification)
-                         .joins(:meal).includes(:meal)
-                         .where(certifications: {name: keys}))
+    like_string = like_array.join(' OR ')
+byebug
+    @chefs = Chef.for_clients.where(cuisines: { name: keys })
+                 .or(Chef.for_clients.where(dietary_accommodations: { name: keys }))
+                 .or(Chef.for_clients.where(like_string))
+                 .or(Chef.for_clients.where(certifications: { name: keys }))
 
     if params[:radius] != 'N/A'
-      @chefs = @chefs.select do |chef|
+      @chefs.select! do |chef|
         chef.user.distance_to(@current_user) <= params[:radius].to_f
       end
     end
-
   end
 
   def new

@@ -10,9 +10,16 @@ class Chef < ApplicationRecord
             presence: true
 
 
-  has_many :meal
+  has_many :meals
   has_and_belongs_to_many :cuisine
   has_and_belongs_to_many :dietary_accommodation
   has_and_belongs_to_many :certification
+
+  scope :for_clients, -> do
+    joins(:cuisine).includes(:cuisine)
+         .joins(:dietary_accommodation).includes(:dietary_accommodation)
+         .joins(:certification).includes(:certification)
+         .joins(:meals).includes(:meals)
+  end
 
 end

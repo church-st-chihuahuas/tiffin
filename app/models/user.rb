@@ -7,15 +7,11 @@ class User < ApplicationRecord
                 with: /\A[^@\s]+@[^@\s]+\z/,
                 message: 'does not appear to be a valid email address'
             },
-            uniqueness: {
-                case_sensitive: false
-            }
+            uniqueness: {case_sensitive: false}
 
   validates :password,
-            presence: true
-            # confirmation: true
-
-  validates :password, confirmation: { case_sensitive: true }
+            presence: true,
+            confirmation: {case_sensitive: true}
 
   validates :role,
             presence: true
@@ -25,13 +21,17 @@ class User < ApplicationRecord
   validates :first_name, :last_name, :contact_phone,
             presence: true
 
-  validates :street_address, :city, :state, :zip_code,
+  validates :street_address, :city, :state,
             presence: true
 
-  validates_format_of :zip_code, :with => /\d{5}(-\d{4})?/, :message => "Invalid ZIP Code."
+  validates :zip_code,
+            presence: true,
+            format: {
+                with: /\d{5}(-\d{4})?/,
+                message: 'Invalid ZIP Code.' #TODO 'is invalid'
+            }
 
   has_one :chef
-
 
 
   def authenticate(password)
@@ -46,8 +46,8 @@ class User < ApplicationRecord
     "#{self.street_address}, #{self.city}, #{self.state}, #{self.zip_code}"
   end
 
-  geocoded_by :full_address   # can also be an IP address
-  after_validation :geocode   # auto-fetch coordinates
+  geocoded_by :full_address # can also be an IP address
+  after_validation :geocode # auto-fetch coordinates
 
   def distance_to(other_user)
     phi1 = self.latitude * Math::PI / 180
@@ -57,8 +57,8 @@ class User < ApplicationRecord
 
     dphi = phi1 - phi2
     dlambda = lambda1 - lambda2
-    arg = (Math.sin(dphi/2) ** 2) +
-        (Math.cos(phi1) * Math.cos(phi2)) * (Math.sin(dlambda/2) ** 2)
+    arg = (Math.sin(dphi / 2) ** 2) +
+        (Math.cos(phi1) * Math.cos(phi2)) * (Math.sin(dlambda / 2) ** 2)
     sqrt_arg = Math.sqrt(arg)
     2 * 3959 * Math.asin(sqrt_arg)
 
