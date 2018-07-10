@@ -18,11 +18,16 @@
           Name
         %th
           Description
+        %th
+          Actions
 
       - @meals.each do | meal |
         %tr
           %td
             = link_to meal.short_name, meal_path(meal)
           %td
-            =meal.description
-
+            = meal.description
+          %td
+            = link_to 'Edit', edit_meal_path(meal), class: 'btn btn-default'
+            %br
+            = link_to 'Delete', meal_path(meal), {method: :delete, confirm: 'Are you sure?', class: 'btn btn-default'}

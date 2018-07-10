@@ -11,7 +11,13 @@ class MealsController < ApplicationController
   end
 
   def create
-
+    @meal = Meal.new(meals_params) { |meal| meal.chef = @chef }
+    if @meal.save
+      redirect_to chef_meals_path(chef), notice: 'Meal created successfully'
+    else
+      #validation errors
+      render 'new'
+    end
   end
 
   def show
@@ -25,13 +31,25 @@ class MealsController < ApplicationController
   end
 
   def update
-
+    @meal = Meal.find_by(id: params[:id])
+    raise ActiveRecord::RecordNotFound unless @meal
+    if @meal.update(meals_params)
+      redirect_to chef_meals_path(chef), notice: 'Meal updated successfully'
+    else
+      #validation errors
+      render 'new'
+    end
   end
 
   def destroy
     @meal = Meal.find_by(id: params[:id])
     raise ActiveRecord::RecordNotFound unless @meal
-
+    chef = @meal.chef
+    if @meal.destroy
+      redirect_to chef_meals_path(chef)
+    else
+      render 'index'
+    end
   end
 
   def meal_params
