@@ -18,7 +18,7 @@ class ChefsController < ApplicationController
                  .or(Chef.for_clients.where(certifications: { name: keys }))
 
     if params[:radius] != 'N/A'
-      @chefs.select! do |chef|
+      @chefs = @chefs.select do |chef|
         chef.user.distance_to(@current_user) <= params[:radius].to_f
       end
     end
