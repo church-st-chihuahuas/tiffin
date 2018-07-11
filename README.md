@@ -246,6 +246,52 @@ Evidence of mob/pair programming:
 
 Sprint Burndown Chart:  https://docs.google.com/spreadsheets/d/1Q_-6bn4_5w1KV7-V4WFQj1mvH3sGo3V6bvEE7MRG1zk/edit#gid=0
 
+
+# Sprint 3 - Due July 12, 2018 @ 3pm
+
+July 9:
+
+- Andrew - [last 24], [next 24]  [impediments] ; 
+
+- Samir - [last 24], [next 24] [impediments] ;
+
+- Eric - [last 24],  [next 24], [impediments] ;
+
+- Christopher -[last 24], [next 24], [impediments];
+
+- Santiago - [last 24], [next 24], [impediments];
+
+July 10:
+
+- Andrew - [last 24], [next 24]  [impediments] ; 
+
+- Samir - [last 24], [next 24] [impediments] ;
+
+- Eric - [last 24],  [next 24], [impediments] ;
+
+- Christopher -[last 24], [next 24], [impediments];
+
+- Santiago - [last 24], [next 24], [impediments];
+
+July 11:
+
+- Andrew - [last 24], [next 24]  [impediments] ; 
+
+- Samir - [last 24], [next 24] [impediments] ;
+
+- Eric - [last 24],  [next 24], [impediments] ;
+
+- Christopher -[last 24], [next 24], [impediments];
+
+- Santiago - [last 24], [next 24], [impediments];
+
+Forecast of Velocity: 40 Story Points per Sprint; we added another 8 Story Points mid-sprint for a total of 48
+
+Rationale for Velocity: While Yesterday's Weather would indicate that our velocity should be 24 story points per sprint, we have overcome many of the technical hurdles we encountered during the first sprint and have established a working framework.  We therefore believe we can forecast 40 points for this sprint.
+
+Half-velocity is 39 Story Points; all stories are less than 20 Story Points.
+
+
 Evidence of CI/CD: 
 
 [Screenshot of CI](CI.png)
