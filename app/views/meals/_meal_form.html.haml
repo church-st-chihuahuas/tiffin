@@ -7,10 +7,11 @@
 .form-row
   .form-group.col
     %strong Cuisines
-    = form.collection_check_boxes(:cuisine_ids, Cuisine.all, :id, :name) do |cuisine|
-      .cuisine
-        = cuisine.check_box
-        = cuisine.label
+    .form-row
+      = form.collection_check_boxes(:cuisine_ids, Cuisine.all, :id, :name) do |cuisine|
+        .cuisine.col-6
+          = cuisine.check_box
+          = cuisine.label
   .form-group.col
     %strong Dietary Accommodations
     = form.collection_check_boxes(:dietary_accommodation_ids, DietaryAccommodation.all, :id, :name) do |acc|
