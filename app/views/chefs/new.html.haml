@@ -15,3 +15,8 @@
           = form.text_field :business_description, class: 'form-control'
         .form-group
           = form.submit 'Sign Up To Be a Chef', class: ['btn btn-primary', 'form-control']
+        .form-group
+          = form.collection_check_boxes(:cuisine_ids, Cuisine.all, :id, :name) do |cuisine|
+            .cuisine
+              = cuisine.check_box
+              = cuisine.label
