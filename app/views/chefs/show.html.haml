@@ -50,11 +50,18 @@
           .card.meal-card
             = image_tag('tiffin_cover.jpg', class: 'card-img-top')
             .card-body
-              %h5.card-title= meal.short_name
+              %h4.card-title= meal.short_name
               %p.card-text= meal.description
-              .meal-cuisines
+            %ul.list-group.list-group-flush
+              .list-group-item
+                %h5
+                  Cuisine
                 - meal.cuisines.each do |cuisine|
-                  %small= cuisine.name
-              .meal-accommodations
+                  .meal-card__enumerable
+                    = cuisine.name
+              .list-group-item
+                %h5
+                  Dietary Accomodations
                 - meal.dietary_accommodations.each do |acc|
-                  %small= acc.name
+                  .meal-card__enumerable
+                    = acc.name
