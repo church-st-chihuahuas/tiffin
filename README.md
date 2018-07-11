@@ -285,11 +285,11 @@ July 11:
 
 - Santiago - [last 24], [next 24], [impediments];
 
-Forecast of Velocity: 40 Story Points per Sprint; we added another 8 Story Points mid-sprint for a total of 48
+Forecast of Velocity: 39 Story Points per Sprint
 
-Rationale for Velocity: While Yesterday's Weather would indicate that our velocity should be 24 story points per sprint, we have overcome many of the technical hurdles we encountered during the first sprint and have established a working framework.  We therefore believe we can forecast 40 points for this sprint.
+Rationale for Velocity: Yesterday's Weather indicated we could accomplish more than we forecasted; however, we knew we could not do 48 because we did not have as much time to work during the day.
 
-Half-velocity is 39 Story Points; all stories are less than 20 Story Points.
+Half-velocity is 19 Story Points; all stories are less than 19 Story Points.
 
 Sprint Burndown Chart: https://docs.google.com/spreadsheets/d/1C81sI4wgc7uKNamSNjyUXK-uVI-ai1bicgOo1vX5MUU/edit#gid=0
 
