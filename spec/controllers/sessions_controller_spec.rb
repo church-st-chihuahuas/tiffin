@@ -5,9 +5,20 @@ describe SessionsController do
 
   describe "POST create" do
     let(:client) {create(:user)}
-    it "renders the index template" do
-      post :create, {params: {session: {email: client.email, password: client.password}}}
-      expect(response).to redirect_to(user_home_path)
+    context 'when a user is a client' do
+      it 'renders the client home' do
+        post :create, {params: {session: {email: client.email, password: client.password}}}
+        expect(response).to redirect_to(user_home_path)
+      end
+    end
+
+    context 'when user is a chef' do
+      let(:chef_user) {create(:user, role: :chef, email: 'chef@chef.com')}
+      let(:chef) {create(:chef, user_id: chef_user.id)}
+      it 'redirects to chef home page' do
+        post :create, {params: {session: {email: chef_user.email, password: chef_user.password}}}
+        expect(response).to redirect_to(user_chefs_path(chef_user.id))
+      end
     end
   end
 
