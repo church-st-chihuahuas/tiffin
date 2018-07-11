@@ -291,6 +291,10 @@ Rationale for Velocity: Yesterday's Weather indicated we could accomplish more t
 
 Half-velocity is 19 Story Points; all stories are less than 19 Story Points.
 
+Evidence of mob/pair programming
+[July 10](mobbing1.jpg)
+[July 10](mobbing2.jpg)
+
 Sprint Burndown Chart: https://docs.google.com/spreadsheets/d/1C81sI4wgc7uKNamSNjyUXK-uVI-ai1bicgOo1vX5MUU/edit#gid=0
 
 Evidence of CI/CD: 
