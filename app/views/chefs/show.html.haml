@@ -18,7 +18,7 @@
   .row
     .dietary-accommodations.col-md
       %strong Dietary Accommodations
-      - @chef.dietary_accommodation.each do |acc|
+      - @chef.dietary_accommodations.each do |acc|
         .accommodation
           = acc.name
     .certifications.col-md
@@ -54,5 +54,5 @@
                 - meal.cuisines.each do |cuisine|
                   %small= cuisine.name
               .meal-accommodations
-                - meal.dietary_accommodation.each do |acc|
+                - meal.dietary_accommodations.each do |acc|
                   %small= acc.name
