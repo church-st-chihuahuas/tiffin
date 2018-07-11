@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  include Math
+  include Geocoder::Calculations
 
   validates :email,
             presence: true,
