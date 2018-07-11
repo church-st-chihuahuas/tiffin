@@ -7,15 +7,27 @@ class ChefsController < ApplicationController
     @chefs = []
     return unless keys
 
-    like_array = keys.map do |key|
+    meals_like_array = keys.map do |key|
       "meals.description LIKE '%#{key}%'"
     end
-    like_string = like_array.join(' OR ')
+    meals_like_string = meals_like_array.join(' OR ')
+
+    biz_desc_like_array = keys.map do |key|
+      "business_description LIKE '%#{key}%'"
+    end
+    biz_desc_like_str = biz_desc_like_array.join(' OR ')
+
+    biz_name_like_array = keys.map do |key|
+      "business_name LIKE '%#{key}%'"
+    end
+    biz_name_like_str = biz_name_like_array.join(' OR ')
 
     @chefs = Chef.for_clients.where(cuisines: { name: keys })
                  .or(Chef.for_clients.where(dietary_accommodations: { name: keys }))
-                 .or(Chef.for_clients.where(like_string))
-                 .or(Chef.for_clients.where(certifications: { name: keys })).distinct
+                 .or(Chef.for_clients.where(meals_like_string))
+                 .or(Chef.for_clients.where(certifications: { name: keys }))
+                .or(Chef.for_clients.where(biz_name_like_str))
+                .or(Chef.for_clients.where(biz_desc_like_str)).distinct
 
     if params[:radius] != 'N/A'
       @chefs = @chefs.select do |chef|
