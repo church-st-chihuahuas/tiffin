@@ -1,6 +1,6 @@
 .container.page-content
   .row
-    .col
+    .col-sm-3
       %h2
         = @chef.user.full_name
     .col
@@ -39,29 +39,30 @@
   %hr
 
   .row
-    .col.meals
+    .col-sm-3.meals
       %h3 Meals Offered
 
+    .col
       - if @chef.user == current_user
         = link_to 'Edit Meals', chef_meals_path(@chef), class: 'btn btn-primary'
 
-      .row
-        - @chef.meals.each do |meal|
-          .card.meal-card
-            = image_tag('tiffin_cover.jpg', class: 'card-img-top')
-            .card-body
-              %h4.card-title= meal.short_name
-              %p.card-text= meal.description
-            %ul.list-group.list-group-flush
-              .list-group-item
-                %h5
-                  Cuisine
-                - meal.cuisines.each do |cuisine|
-                  .meal-card__enumerable
-                    = cuisine.name
-              .list-group-item
-                %h5
-                  Dietary Accomodations
-                - meal.dietary_accommodations.each do |acc|
-                  .meal-card__enumerable
-                    = acc.name
+  .row
+    - @chef.meals.each do |meal|
+      .card.meal-card
+        = image_tag('tiffin_cover.jpg', class: 'card-img-top')
+        .card-body
+          %h4.card-title= meal.short_name
+          %p.card-text= meal.description
+        %ul.list-group.list-group-flush
+          .list-group-item
+            %h5
+              Cuisine
+            - meal.cuisines.each do |cuisine|
+              .meal-card__enumerable
+                = cuisine.name
+          .list-group-item
+            %h5
+              Dietary Accomodations
+            - meal.dietary_accommodations.each do |acc|
+              .meal-card__enumerable
+                = acc.name
