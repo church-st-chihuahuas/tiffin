@@ -63,22 +63,35 @@ Cuisine.create([{name: 'Indian'}, {name: 'American'}, {name: 'Middle Eastern'},
                 {name: 'Turkish'}])
 
 Chef.create({user_id: User.find_by_email('rubius@hogwarts.edu').id,
-              business_name: "Hagrid's Hot Dog Hut",
-              business_description: "We make hot dogs out of all the magical beasts you can imagine!"}) do |chef|
+             business_name: "Hagrid's Hot Dog Hut",
+             business_description: "We make non-pork based hot dogs out of all the magical beasts you can imagine!"}) do |chef|
   chef.cuisines << Cuisine.find_by_name('Indian')
-  chef.cuisines << Cuisine.find_by_name('Middle Eastern')
+  chef.cuisines << Cuisine.find_by_name('Jewish')
+  chef.cuisines << Cuisine.find_by_name('Mexican')
   chef.dietary_accommodations << DietaryAccommodation.find_by_name('vegetarian')
   chef.dietary_accommodations << DietaryAccommodation.find_by_name('kosher')
   chef.certifications << Certification.find_by_authority('OK')
 end
 
+Chef.create({user_id: User.find_by_email('kerry@tiffin.com').id,
+             business_name: "Kerry's Kitchen",
+             business_description: "We serve up healthy meals for a variety of tastes and diets."}) do |chef|
+  chef.cuisines << Cuisine.find_by_name('Indian')
+  chef.cuisines << Cuisine.find_by_name('Italian')
+  chef.cuisines << Cuisine.find_by_name('Jewish')
+  chef.cuisines << Cuisine.find_by_name('Pennsylvania Dutch')
+  chef.dietary_accommodations << DietaryAccommodation.find_by_name('vegetarian')
+  chef.dietary_accommodations << DietaryAccommodation.find_by_name('kosher')
+  chef.dietary_accommodations << DietaryAccommodation.find_by_name('organic')
+  chef.dietary_accommodations << DietaryAccommodation.find_by_name('halal')
+  chef.certifications << Certification.find_by_authority('OK')
+  chef.certifications << Certification.find_by_authority('USDA')
+  chef.certifications << Certification.find_by_authority('USA Halal Chamber of Commerce')
+end
+
 Chef.create([{user_id: User.find_by_email('severus@hogwarts.edu').id,
               business_name: "Snape's Slightly Poisonous Potions",
               business_description: "Our potions are only slightly poisonous!"},
-             {user_id: User.find_by_email('kerry@tiffin.com').id,
-              business_name: "Kerry's Kitchen",
-              business_description: "We serve up healthy meals for a variety of tastes and diets.",
-              cuisines: [Cuisine.first, Cuisine.second, Cuisine.third]},
              {user_id: User.find_by_email('luna@hogwarts.edu').id,
               business_name: "Luna's Moon Pies",
               business_description: "Loony moon pies filled with wonder.",
@@ -90,7 +103,7 @@ Chef.create([{user_id: User.find_by_email('severus@hogwarts.edu').id,
              {user_id: User.find_by_email('jack@abby.com').id,
               business_name: "Jack's Abby Craft Lagers",
               business_description: "Craft lagers for the discerning palate."},
-              cuisines: [Cuisine.first, Cuisine.second, Cuisine.third]])
+             cuisines: [Cuisine.first, Cuisine.second, Cuisine.third]])
 
 Meal.create([{chef: Chef.first, short_name: 'Chana Masala', description: 'Chickpeas in Masala sauce.'}]) do |meal|
   meal.cuisines << Cuisine.find_by_name('Indian')
@@ -105,7 +118,7 @@ end
 
 Meal.create([{chef: Chef.first, short_name: 'Matzoh Ball Soup',
               description: 'Matzoh ball soup, perfect for Passover.  Mazel Tov!'}]) do |meal|
-  meal.cuisines << Cuisine.find_by_name('Middle Eastern')
+  meal.cuisines << Cuisine.find_by_name('Jewish')
   meal.dietary_accommodations << DietaryAccommodation.find_by_name('kosher')
 end
 
