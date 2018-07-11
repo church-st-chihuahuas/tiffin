@@ -50,6 +50,8 @@ class ChefsController < ApplicationController
   end
 
   def edit
+    @chef = User.find_by(id: params[:user_id]).chef
+    raise ActiveRecord::RecordNotFound unless @chef
   end
 
   def update
