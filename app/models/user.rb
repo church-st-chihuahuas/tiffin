@@ -51,9 +51,9 @@ class User < ApplicationRecord
 
   def distance_to(other_user)
     phi1 = self.latitude * Math::PI / 180
-    phi2 = other_user.latitude * Math::PI / 180
+    phi2 = other_user.latitude.to_i * Math::PI / 180
     lambda1 = self.longitude * Math::PI / 180
-    lambda2 = other_user.longitude * Math::PI / 180
+    lambda2 = other_user.longitude.to_i * Math::PI / 180
 
     dphi = phi1 - phi2
     dlambda = lambda1 - lambda2

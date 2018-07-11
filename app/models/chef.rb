@@ -15,8 +15,6 @@ class Chef < ApplicationRecord
   has_and_belongs_to_many :dietary_accommodations
   has_and_belongs_to_many :certifications
 
-  accepts_nested_attributes_for :cuisines
-
   scope :for_clients, -> do
     left_outer_joins(:cuisines).includes(:cuisines)
          .left_outer_joins(:dietary_accommodations).includes(:dietary_accommodations)

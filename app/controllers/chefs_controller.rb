@@ -67,6 +67,14 @@ class ChefsController < ApplicationController
   end
 
   def update
+    @chef = User.find_by(id: params[:user_id]).chef
+    raise ActiveRecord::RecordNotFound unless @chef
+    if @chef.update(chef_params)
+      redirect_to chef_meals_path(@chef), notice: 'Chef updated successfully'
+    else
+      #validation errors
+      render 'edit'
+    end
   end
 
   def delete
