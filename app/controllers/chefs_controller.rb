@@ -15,7 +15,7 @@ class ChefsController < ApplicationController
     @chefs = Chef.for_clients.where(cuisines: { name: keys })
                  .or(Chef.for_clients.where(dietary_accommodations: { name: keys }))
                  .or(Chef.for_clients.where(like_string))
-                 .or(Chef.for_clients.where(certifications: { name: keys }))
+                 .or(Chef.for_clients.where(certifications: { name: keys })).distinct
 
     if params[:radius] != 'N/A'
       @chefs = @chefs.select do |chef|

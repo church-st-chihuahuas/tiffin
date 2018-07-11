@@ -18,10 +18,10 @@ class Chef < ApplicationRecord
   accepts_nested_attributes_for :cuisines
 
   scope :for_clients, -> do
-    joins(:cuisines).includes(:cuisines)
-         .joins(:dietary_accommodations).includes(:dietary_accommodations)
-         .joins(:certifications).includes(:certifications)
-         .joins(:meals).includes(:meals)
+    left_outer_joins(:cuisines).includes(:cuisines)
+         .left_outer_joins(:dietary_accommodations).includes(:dietary_accommodations)
+         .left_outer_joins(:certifications).includes(:certifications)
+         .left_outer_joins(:meals).includes(:meals)
   end
 
 end

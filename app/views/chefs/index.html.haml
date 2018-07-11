@@ -13,8 +13,11 @@
           = select_tag(:radius, options_for_select(['N/A', 1, 5, 10, 20, 50]))
 
       - if @chefs.length == 0
-        %p No results available.
+        %p
+          %strong No chefs found.
       - else
+        %p
+          %strong Found #{@chefs.length} chefs in your area.
         - @chefs.each do | chef |
           .card
             .card-header
