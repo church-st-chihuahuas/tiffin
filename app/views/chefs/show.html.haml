@@ -23,7 +23,7 @@
           = acc.name
     .certifications.col-md
       %strong Certifications
-      - @chef.certification.each do |cert|
+      - @chef.certifications.each do |cert|
         .certifiction
           = link_to(cert.url, target: '_blank') do
             = cert.name

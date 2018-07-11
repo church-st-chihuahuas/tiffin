@@ -69,7 +69,7 @@ Chef.create({user_id: User.find_by_email('rubius@hogwarts.edu').id,
   chef.cuisines << Cuisine.find_by_name('Middle Eastern')
   chef.dietary_accommodations << DietaryAccommodation.find_by_name('vegetarian')
   chef.dietary_accommodations << DietaryAccommodation.find_by_name('kosher')
-  chef.certification << Certification.find_by_authority('OK')
+  chef.certifications << Certification.find_by_authority('OK')
 end
 
 Chef.create([{user_id: User.find_by_email('severus@hogwarts.edu').id,

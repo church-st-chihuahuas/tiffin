@@ -13,14 +13,14 @@ class Chef < ApplicationRecord
   has_many :meals
   has_and_belongs_to_many :cuisines
   has_and_belongs_to_many :dietary_accommodations
-  has_and_belongs_to_many :certification
+  has_and_belongs_to_many :certifications
 
   accepts_nested_attributes_for :cuisines
 
   scope :for_clients, -> do
     joins(:cuisines).includes(:cuisines)
          .joins(:dietary_accommodations).includes(:dietary_accommodations)
-         .joins(:certification).includes(:certification)
+         .joins(:certifications).includes(:certifications)
          .joins(:meals).includes(:meals)
   end
 

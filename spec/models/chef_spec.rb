@@ -8,7 +8,7 @@ describe Chef do
   describe 'associations' do
     it { is_expected.to belong_to(:user) }
     it {is_expected.to have_many(:meals)}
-    it {is_expected.to have_and_belong_to_many(:certification)}
+    it {is_expected.to have_and_belong_to_many(:certifications)}
     it {is_expected.to have_and_belong_to_many(:dietary_accommodations)}
     it {is_expected.to have_and_belong_to_many(:cuisines)}
 
