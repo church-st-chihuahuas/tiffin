@@ -50,17 +50,6 @@ class User < ApplicationRecord
   after_validation :geocode # auto-fetch coordinates
 
   def distance_to(other_user)
-    phi1 = self.latitude * Math::PI / 180
-    phi2 = other_user.latitude.to_i * Math::PI / 180
-    lambda1 = self.longitude * Math::PI / 180
-    lambda2 = other_user.longitude.to_i * Math::PI / 180
-
-    dphi = phi1 - phi2
-    dlambda = lambda1 - lambda2
-    arg = (Math.sin(dphi / 2) ** 2) +
-        (Math.cos(phi1) * Math.cos(phi2)) * (Math.sin(dlambda / 2) ** 2)
-    sqrt_arg = Math.sqrt(arg)
-    2 * 3959 * Math.asin(sqrt_arg)
-
+    Geocoder::Calculations.distance_between([self.latitude, self.longitude], [other_user.latitude, other_user.longitude])
   end
 end
