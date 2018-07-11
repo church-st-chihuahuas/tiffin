@@ -115,40 +115,40 @@ Daily Scrum Held on July 2nd at 2:55pm, July 3rd at 3:00pm, and July 4th at 10:3
 
 July 2: 
 
-- Andrew - [last 24] interviewed stakeholder and finalized product backlog items, [next 24] researched Ruby on Rails and associated technologies, [impediments] lack knowledge of some technologies to be used; 
+- Andrew - [Last 24] interviewed stakeholder and finalized product backlog items, [Next 24] researched Ruby on Rails and associated technologies, [impediments] lack knowledge of some technologies to be used; 
 
-- Samir - [last 24] Contributed to product backlog items, formatted README in Markdown for repo [next 24] Read Ruby tutorials and install Ruby/Rails infrastructure on machine, [impediments] Don't know any Ruby;
+- Samir - [Last 24] Contributed to product backlog items, formatted README in Markdown for repo [Next 24] Read Ruby tutorials and install Ruby/Rails infrastructure on machine, [impediments] Don't know any Ruby;
 
-- Eric - [last 24] Contributed to backlog items, participated in google hangout mob programming session, acted as Scrum Master, setup trello boards for the assignment as well as the project, learning ruby (mob programming really helps),  [next 24] continue to support team, review assingment backlog items, [impediments] the pace is tough, there's a lot to do and not a lot of time. it makes it hard to have thoughtful discussions because we have to keep moving;
+- Eric - [Last 24] Contributed to backlog items, participated in google hangout mob programming session, acted as Scrum Master, setup trello boards for the assignment as well as the project, learning ruby (mob programming really helps),  [Next 24] continue to support team, review assingment backlog items, [impediments] the pace is tough, there's a lot to do and not a lot of time. it makes it hard to have thoughtful discussions because we have to keep moving;
 
-- Christopher - [last 24] , [next 24] Setup tools for development environment. Ruby/Rails tutorials. , [impediments] Getting started with dev environment;
+- Christopher - [Last 24] , [Next 24] Setup tools for development environment. Ruby/Rails tutorials. , [impediments] Getting started with dev environment;
 
-- Santiago - [last 24] Prepare for sprint , [next 24] Scaffolding and getting a rails App up and committed to git, [impediments] Predicted that mismatches of development environment may cause problems for setting up team member's dev environment ;
+- Santiago - [Last 24] Prepare for sprint , [Next 24] Scaffolding and getting a rails App up and committed to git, [impediments] Predicted that mismatches of development environment may cause problems for setting up team member's dev environment ;
 
 July 3:
 
-- Andrew - [last 24] created sprint burndown chart, installed technology stack, participated in mob programming session, continued researching Ruby, set up meeting with stakeholder [next 24] continue researching Ruby, participate in next mob programming session, [impediments] homebrew not working correctly - will research possible solutions; 
+- Andrew - [Last 24] created sprint burndown chart, installed technology stack, participated in mob programming session, continued researching Ruby, set up meeting with stakeholder [Next 24] continue researching Ruby, participate in next mob programming session, [impediments] homebrew not working correctly - will research possible solutions; 
 
-- Samir - [last 24] Set up local instance of application and server on machine, discussed project architecture with Scrum team, [next 24] Begin tackling sprint backlog through mob programming session, [impediments] Know marginally more Ruby but still not a lot, and still getting a grasp on Rails project structure;
+- Samir - [Last 24] Set up local instance of application and server on machine, discussed project architecture with Scrum team, [Next 24] Begin tackling sprint backlog through mob programming session, [impediments] Know marginally more Ruby but still not a lot, and still getting a grasp on Rails project structure;
 
-- Eric - [last 24] , Contributed to refining product backlog items, participated in google hangout mob programming session, acted as Scrum Master, still in the porcess of learning ruby (mob programming really helps),  [next 24] continue to work with team on designing, developing, and shaking out requirements, [impediments] ;
+- Eric - [Last 24] , Contributed to refining product backlog items, participated in google hangout mob programming session, acted as Scrum Master, still in the porcess of learning ruby (mob programming really helps),  [Next 24] continue to work with team on designing, developing, and shaking out requirements, [impediments] ;
 
-- Christopher - [last 24] Setup app on local machine. Decided product architecture , [next 24] Create wireframes for login story, [impediments] Still learning application framework;
+- Christopher - [Last 24] Setup app on local machine. Decided product architecture , [Next 24] Create wireframes for login story, [impediments] Still learning application framework;
 
-- Santiago - [last 24] Rails app, up and running, provided instructions to the team, Relieved that teammates stepped up and improved instructions for setting up environments, [next 24] show the team how to use Rspec, and how to do validations in activerecord rails helped setup views, [impediments] FactoryBots for Rspec unit testing are not working;
+- Santiago - [Last 24] Rails app, up and running, provided instructions to the team, Relieved that teammates stepped up and improved instructions for setting up environments, [Next 24] show the team how to use Rspec, and how to do validations in activerecord rails helped setup views, [impediments] FactoryBots for Rspec unit testing are not working;
 
 
 July 4:
 
-- Andrew - [last 24] participated in mob programming, updated sprint burndown chart, continued researching Ruby [next 24] complete sprint burndown chart, work with team to update Trello board, and demo sprint results to stakeholder, [impediments] ; 
+- Andrew - [Last 24] participated in mob programming, updated sprint burndown chart, continued researching Ruby [Next 24] complete sprint burndown chart, work with team to update Trello board, and demo sprint results to stakeholder, [impediments] ; 
 
-- Samir - [last 24] Participated in mob programming session over Google Hangout, [next 24] Continue mob programming approach to sprint backlog, begin refining UI elements of application, [impediments] ;
+- Samir - [Last 24] Participated in mob programming session over Google Hangout, [Next 24] Continue mob programming approach to sprint backlog, begin refining UI elements of application, [impediments] ;
 
-- Eric - [last 24] Participated in mob programming session over Google Hangout (these last for hours), updated trello baords, [next 24] help with testing and refining code, [impediments] ;
+- Eric - [Last 24] Participated in mob programming session over Google Hangout (these last for hours), updated trello baords, [Next 24] help with testing and refining code, [impediments] ;
 
-- Christopher - [last 24] Create wireframes for the login story and mob programmed the beginning of the login and create user stories, [next 24] Mob program the remaining login items, Continue to refine UI ahead of sprint review, [impediments] None;
+- Christopher - [Last 24] Create wireframes for the login story and mob programmed the beginning of the login and create user stories, [Next 24] Mob program the remaining login items, Continue to refine UI ahead of sprint review, [impediments] None;
 
-- Santiago - [last 24] FactoryBots working!!! (Relieved!), [next 24] Mob the implementation of the Chef model, controller, and views; Back end for the logout and verify the login works as expected [impediments] Concern with the flash messages;
+- Santiago - [Last 24] FactoryBots working!!! (Relieved!), [Next 24] Mob the implementation of the Chef model, controller, and views; Back end for the logout and verify the login works as expected [impediments] Concern with the flash messages;
 
 
 Forecast of Velocity: 24 Story Points per Sprint
@@ -167,15 +167,15 @@ Evidence of Test Driven Development and Mob Programming: https://youtu.be/ce0HGx
 
 July 5:
 
-- Andrew - [last 24] participated in mob programming session, prepared presentation for stakeholder, worked on compiling inputs for assignment on canvas and updated sprint backlog and sprint burndown chart, [next 24] sprint review, sprint retrospective, and sprint planning [impediments] None; 
+- Andrew - [Last 24] participated in mob programming session, prepared presentation for stakeholder, worked on compiling inputs for assignment on canvas and updated sprint backlog and sprint burndown chart, [Next 24] sprint review, sprint retrospective, and sprint planning [Impediments] None; 
 
-- Samir - [last 24] Participated in 2 mob programming sessions, fixed alerts on login/signup forms, made UI adjustments , [next 24] Sprint review, retrospective, plan next sprint, learn more about rendering templates in Rails, [impediments] ;
+- Samir - [Last 24] Participated in 2 mob programming sessions, fixed alerts on login/signup forms, made UI adjustments , [Next 24] Sprint review, retrospective, plan next sprint, learn more about rendering templates in Rails, [Impediments] ;
 
-- Eric - [last 24] Participated in mob programming session over Google Hangout (these last for hours), acted as Scrum Master, updated trello boards [next 24] close the current sprint, incorporate feedback from stakeholder, start a new sprint, [impediments] ;
+- Eric - [Last 24] Participated in mob programming session over Google Hangout (these last for hours), acted as Scrum Master, updated trello boards [Next 24] close the current sprint, incorporate feedback from stakeholder, start a new sprint, [Impediments] ;
 
-- Christopher -[last 24 ] Participated in mob programming sessions, and updated UI to match wireframes , [next 24] Planning for sprint 2, [impediments] None;
+- Christopher -[Last 24 ] Participated in mob programming sessions, and updated UI to match wireframes , [Next 24] Planning for sprint 2, [Impediments] None;
 
-- Santiago - [last 24] During mob programming, introduced controllers and model rails generators to the team, reviewed activerecord enum, which provides wonderful DSLs. [next 24] learn about feature testing; figure out better ways to impart knowledge on Rails to the team, [impediments] flash messages not working ;
+- Santiago - [Last 24] During mob programming, introduced controllers and model rails generators to the team, reviewed activerecord enum, which provides wonderful DSLs. [Next 24] learn about feature testing; figure out better ways to impart knowledge on Rails to the team, [Impediments] flash messages not working ;
 
 July 6:  9:15 pm on 06 July 2018
 
@@ -183,17 +183,17 @@ July 6:  9:15 pm on 06 July 2018
            [Next 24] CI/CD, Display Chef’s Repertoire
            [Impediments] Learning CI/CD technology stack
 
-- Samir - [last 24] Sprint review, retrospective, and sprint 2 planning (including planning poker to revise estimates of adjusted PBIs); begin working on chef model [next 24] Figure out CI/CD services, flesh out remaining models and relationships, begin chef homepage/meal listing [impediments] Auto-generated factory file preventing me from writing tests for chef model
+- Samir - [Last 24] Sprint review, retrospective, and sprint 2 planning (including planning poker to revise estimates of adjusted PBIs); begin working on chef model [Next 24] Figure out CI/CD services, flesh out remaining models and relationships, begin chef homepage/meal listing [Impediments] Auto-generated factory file preventing me from writing tests for chef model
 
-- Eric - [last 24] Participated in Sprint planning, planning poker, mob programming, daily scrum,
-         [next 24] research for search, CI/CD, mobbing, daily scrum,
-         [impediments]
+- Eric - [Last 24] Participated in Sprint planning, planning poker, mob programming, daily scrum,
+         [Next 24] research for search, CI/CD, mobbing, daily scrum,
+         [Impediments]
 
-- Santiago - [last 24] Participated in kicking of the sprint by planning poker, mob programming prototypes, 
-             [next 24] , 
-             [impediments] NONE
+- Santiago - [Last 24] Participated in kicking of the sprint by planning poker, mob programming prototypes, 
+             [Next 24] , 
+             [Impediments] NONE
 
-- Christopher - [last 24] Participated in sprint planning for Sprint 2, [next 24] Begin work on chef display ticket, star any required UI work if possible, [impediments] None.
+- Christopher - [Last 24] Participated in sprint planning for Sprint 2, [Next 24] Begin work on chef display ticket, star any required UI work if possible, [Impediments] None.
 
 July 7:  3:00 pm on 07 July 2018
 
@@ -202,17 +202,17 @@ July 7:  3:00 pm on 07 July 2018
             [Impediments] lack of knowledge of how ransack/solar work for search, which I plan to correct on working on them
            
 
-- Samir - [last 24] Finished defining and testing models and relationships between them; Built chef view displaying all fields and relationships for a chef [next 24] Implement geocoding of addresses and distance calculations for chefs and clients [impediments] N/A
+- Samir - [Last 24] Finished defining and testing models and relationships between them; Built chef view displaying all fields and relationships for a chef [Next 24] Implement geocoding of addresses and distance calculations for chefs and clients [Impediments] N/A
 
-- Eric - [last 24] CI/CD implementation, daily scrum, mobbing
-         [next 24] CD/CD implementation cont., daily scrum, mobbing
-         [impediments] 
+- Eric - [Last 24] CI/CD implementation, daily scrum, mobbing
+         [Next 24] CD/CD implementation cont., daily scrum, mobbing
+         [Impediments] 
 
-- Santiago - [last 24], Revisited the implementation of the session management. Moved biz logic to helpers, thus de-cluttered views. Learnt important lessons in testing
-            [next 24], The workflow for registrations was improved and implemented.
-            [impediments] NONE
+- Santiago - [Last 24], Revisited the implementation of the session management. Moved biz logic to helpers, thus de-cluttered views. Learnt important lessons in testing
+            [Next 24], The workflow for registrations was improved and implemented.
+            [Impediments] NONE
 
-- Christopher - [last 24] Paired with Santiago to complete login and session UI workflow, [next 24] Work with Santiago to complete UI workflow, and then begin mobbing the chef display data, [impediments] None
+- Christopher - [Last 24] Paired with Santiago to complete login and session UI workflow, [Next 24] Work with Santiago to complete UI workflow, and then begin mobbing the chef display data, [Impediments] None
 
 July 8:  4:00 pm on 08 July 2018
 
@@ -220,17 +220,17 @@ July 8:  4:00 pm on 08 July 2018
             [Next 24] Incorporating distance search for chefs, connecting with stakeholder, preparing demo
             [Impediments] Gem doesn’t allow direct testing, testing manual
 
-- Samir -   [last 24] Integrated geocoding API that saves latitude and longitude on user creation, incorporated test of geocoding into SessionsController tests [next 24] Display distance to each chef in search results [impediments] N/A
+- Samir -   [Last 24] Integrated geocoding API that saves latitude and longitude on user creation, incorporated test of geocoding into SessionsController tests [Next 24] Display distance to each chef in search results [Impediments] N/A
 
 - Christopher - [Last 24] Finished pair programming login and session management, added logo and links to home page, pair programmed chef display and search, [Next 24] Continue pair programming chef display and search, add tests for chef login and session management, [Impediments] None.
 
-- Eric - [last 24] CI/CD working, badges added to readme, daily scrum, mobbing, 
-         [next 24] finalize CI/CD if time, add deploy build badge to readme, join stakeholder meeting, daily scrum, 
-         [impediments]    
+- Eric - [Last 24] CI/CD working, badges added to readme, daily scrum, mobbing, 
+         [Next 24] finalize CI/CD if time, add deploy build badge to readme, join stakeholder meeting, daily scrum, 
+         [Impediments]    
          
-- Santiago - [last 24] improved factories by adding sequences; prototyped activerecord queries for the Meal search; lessons can be used for Chef search. Started implementation for the controllers and views for the Meal search form., 
-             [next 24] Move activerecord queries for Chef and Meal into scope, so the code is DRY. Scope a easier to test and can be merged other scopes., 
-             [impediments] None                
+- Santiago - [Last 24] improved factories by adding sequences; prototyped activerecord queries for the Meal search; lessons can be used for Chef search. Started implementation for the controllers and views for the Meal search form., 
+             [Next 24] Move activerecord queries for Chef and Meal into scope, so the code is DRY. Scope a easier to test and can be merged other scopes., 
+             [Impediments] None                
 
 Forecast of Velocity: 40 Story Points per Sprint; we added another 8 Story Points mid-sprint for a total of 48
 
@@ -251,39 +251,45 @@ Sprint Burndown Chart:  https://docs.google.com/spreadsheets/d/1Q_-6bn4_5w1KV7-V
 
 July 9:
 
-- Andrew - [last 24], [next 24]  [impediments] ; 
+- Andrew -  [Last 24] distance function, prepared for stakeholder demo, turned in project, held sprint review;
+            [Next 24] sprint planning, sprint retrospective, break down sprint plan into smaller stories;
+            [Impediments] Lack of sleep
 
-- Samir - [last 24], [next 24] [impediments] ;
+- Samir -   [Last 24], [Next 24] [Impediments] ;
 
-- Eric - [last 24],  [next 24], [impediments] ;
+- Eric -    [Last 24],  [Next 24], [Impediments] ;
 
-- Christopher -[last 24], [next 24], [impediments];
+- Christopher - [Last 24], [Next 24], [Impediments];
 
-- Santiago - [last 24], [next 24], [impediments];
+- Santiago - [Last 24], [Next 24], [Impediments];
 
 July 10:
 
-- Andrew - [last 24], [next 24]  [impediments] ; 
+- Andrew -  [Last 24] Display radius for each chef, new seed data;
+            [Next 24] Help fix search, work on updating cuisine, certifications, accommodations, experience, seed data;
+            [Impediments] Cannot test search by distance because it only returns one chef; 
 
-- Samir - [last 24], [next 24] [impediments] ;
+- Samir -   [Last 24], [Next 24] [Impediments] ;
 
-- Eric - [last 24],  [next 24], [impediments] ;
+- Eric -    [Last 24],  [Next 24], [Impediments] ;
 
-- Christopher -[last 24], [next 24], [impediments];
+- Christopher - [Last 24], [Next 24], [Impediments];
 
-- Santiago - [last 24], [next 24], [impediments];
+- Santiago - [Last 24], [Next 24], [Impediments];
 
 July 11:
 
-- Andrew - [last 24], [next 24]  [impediments] ; 
+- Andrew -  [Last 24] Worked on seed data, participated in mob programming, contacted stakeholder;
+            [Next 24] Rehearse sprint review; Finish sprint review stakeholder presentation;
+            [Impediments] None; 
 
-- Samir - [last 24], [next 24] [impediments] ;
+- Samir - [Last 24], [Next 24] [Impediments] ;
 
-- Eric - [last 24],  [next 24], [impediments] ;
+- Eric - [Last 24],  [Next 24], [Impediments] ;
 
-- Christopher -[last 24], [next 24], [impediments];
+- Christopher - [Last 24], [Next 24], [Impediments];
 
-- Santiago - [last 24], [next 24], [impediments];
+- Santiago - [Last 24], [Next 24], [Impediments];
 
 Forecast of Velocity: 39 Story Points per Sprint
 
