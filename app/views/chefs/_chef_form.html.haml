@@ -1,0 +1,27 @@
+.form-group
+  = form.label :business_name, class: :required
+  = form.text_field :business_name, class: [:focus, 'form-control']
+.form-group
+  = form.label :business_description, class: :required
+  = form.text_field :business_description, class: 'form-control'
+.form-row
+  .form-group.col
+    %strong Cuisines
+    = form.collection_check_boxes(:cuisine_ids, Cuisine.all, :id, :name) do |cuisine|
+      .cuisine
+        = cuisine.check_box
+        = cuisine.label
+  .form-group.col
+    %strong Dietary Accommodations
+    = form.collection_check_boxes(:dietary_accommodation_ids, DietaryAccommodation.all, :id, :name) do |acc|
+      .accommodation
+        = acc.check_box
+        = acc.label
+  .form-group.col
+    %strong Certifications
+    = form.collection_check_boxes(:certification_ids, Certification.all, :id, :name) do |cert|
+      .certification
+        = cert.check_box
+        = cert.label
+.form-group
+  = form.submit 'Sign Up To Be a Chef', class: ['btn btn-primary', 'form-control']
