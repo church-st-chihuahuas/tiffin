@@ -4,6 +4,6 @@ class Meal < ApplicationRecord
 
   belongs_to :chef
   has_and_belongs_to_many :cuisines
-  has_and_belongs_to_many :dietary_accommodation
+  has_and_belongs_to_many :dietary_accommodations
 
 end

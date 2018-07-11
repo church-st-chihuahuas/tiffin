@@ -67,8 +67,8 @@ Chef.create({user_id: User.find_by_email('rubius@hogwarts.edu').id,
               business_description: "We make hot dogs out of all the magical beasts you can imagine!"}) do |chef|
   chef.cuisines << Cuisine.find_by_name('Indian')
   chef.cuisines << Cuisine.find_by_name('Middle Eastern')
-  chef.dietary_accommodation << DietaryAccommodation.find_by_name('vegetarian')
-  chef.dietary_accommodation << DietaryAccommodation.find_by_name('kosher')
+  chef.dietary_accommodations << DietaryAccommodation.find_by_name('vegetarian')
+  chef.dietary_accommodations << DietaryAccommodation.find_by_name('kosher')
   chef.certification << Certification.find_by_authority('OK')
 end
 
@@ -94,34 +94,34 @@ Chef.create([{user_id: User.find_by_email('severus@hogwarts.edu').id,
 
 Meal.create([{chef: Chef.first, short_name: 'Chana Masala', description: 'Chickpeas in Masala sauce.'}]) do |meal|
   meal.cuisines << Cuisine.find_by_name('Indian')
-  meal.dietary_accommodation << DietaryAccommodation.find_by_name('vegetarian')
+  meal.dietary_accommodations << DietaryAccommodation.find_by_name('vegetarian')
 end
 
 Meal.create([{chef: Chef.first, short_name: 'Tofu Tacos',
               description: 'Tofu Tacos just like at Pancho Villa in the Mission.'}]) do |meal|
   meal.cuisines << Cuisine.find_by_name('Mexican')
-  meal.dietary_accommodation << DietaryAccommodation.find_by_name('vegetarian')
+  meal.dietary_accommodations << DietaryAccommodation.find_by_name('vegetarian')
 end
 
 Meal.create([{chef: Chef.first, short_name: 'Matzoh Ball Soup',
               description: 'Matzoh ball soup, perfect for Passover.  Mazel Tov!'}]) do |meal|
   meal.cuisines << Cuisine.find_by_name('Middle Eastern')
-  meal.dietary_accommodation << DietaryAccommodation.find_by_name('kosher')
+  meal.dietary_accommodations << DietaryAccommodation.find_by_name('kosher')
 end
 
 Meal.create([{chef: Chef.find_by_user_id(User.find_by_email('kerry@tiffin.com')), short_name: 'Chana Saag', description: 'Chana Saag is a classic Indian curry made with chickpeas, lots of spinach, onion, tomato, ginger, garlic and spiced with homemade garam masala.'}]) do |meal|
   meal.cuisines << Cuisine.find_by_name('Indian')
-  meal.dietary_accommodation << DietaryAccommodation.find_by_name('vegetarian')
+  meal.dietary_accommodations << DietaryAccommodation.find_by_name('vegetarian')
 end
 
 Meal.create([{chef: Chef.find_by_user_id(User.find_by_email('kerry@tiffin.com')), short_name: 'Tuscan Potato and Kale Soup',
               description: 'Zuppa Toscana - Creamy Potato & Kale Soup with Italian Sausage.'}]) do |meal|
   meal.cuisines << Cuisine.find_by_name('Italian')
-  meal.dietary_accommodation << DietaryAccommodation.find_by_name('organic')
+  meal.dietary_accommodations << DietaryAccommodation.find_by_name('organic')
 end
 
 Meal.create([{chef: Chef.find_by_user_id(User.find_by_email('kerry@tiffin.com')), short_name: 'Matzoh Ball Soup',
               description: 'Gefilte Fish, perfect for Passover.  Mazel Tov!'}]) do |meal|
   meal.cuisines << Cuisine.find_by_name('Jewish')
-  meal.dietary_accommodation << DietaryAccommodation.find_by_name('kosher')
+  meal.dietary_accommodations << DietaryAccommodation.find_by_name('kosher')
 end
