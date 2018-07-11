@@ -291,6 +291,7 @@ Rationale for Velocity: While Yesterday's Weather would indicate that our veloci
 
 Half-velocity is 39 Story Points; all stories are less than 20 Story Points.
 
+Sprint Burndown Chart: https://docs.google.com/spreadsheets/d/1C81sI4wgc7uKNamSNjyUXK-uVI-ai1bicgOo1vX5MUU/edit#gid=0
 
 Evidence of CI/CD: 
 
