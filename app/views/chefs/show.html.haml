@@ -40,6 +40,9 @@
     .col.meals
       %h3 Meals Offered
 
+      - if @chef.user == current_user
+        = link_to 'Edit Meals', chef_meals_path(@chef), class: 'btn btn-primary'
+
       .row
         - @chef.meals.each do |meal|
           .card.meal-card
