@@ -60,6 +60,7 @@ class ChefsController < ApplicationController
 
   def chef_params
     params.require(:chef)
-        .permit(:business_name, :business_description, cuisine_ids: [])
+        .permit(:business_name, :business_description, cuisine_ids: [],
+                dietary_accommodation_ids: [], certification_ids: [])
   end
 end
