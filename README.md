@@ -265,5 +265,3 @@ When the code is checked into the master branch in GitHub, it is immediately det
 
 Production url: http://lynx.tiffin.c66.me/
 
-
-
