@@ -6,7 +6,7 @@
   = form.text_field :description, class: 'form-control'
 .form-group
   = form.label :price, class: :required
-  = form.text_field :price, class: 'form-control'
+  = form.text_field :price, class: 'form-control' #, type: 'number', min: 0.0, step: 0.01
 .form-group
   %strong Should this meal be visible to customers?
   %br

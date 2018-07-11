@@ -6,6 +6,8 @@
         .card-body
           %h4.card-title
             = meal.short_name
+          .price
+            = "$#{meal.price.to_d.truncate(2).to_f}"
           %p.card-text
             = meal.description
         %ul.list-group.list-group-flush
