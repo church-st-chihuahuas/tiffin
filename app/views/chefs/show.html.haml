@@ -42,15 +42,14 @@
 
       .row
         - @chef.meals.each do |meal|
-          .col
-            .card
-              = image_tag('tiffin_cover.jpg', class: 'card-img-top')
-              .card-body
-                %h5.card-title= meal.short_name
-                %p.card-text= meal.description
-                .meal-cuisines
-                  - meal.cuisine.each do |cuisine|
-                    %small= cuisine.name
-                .meal-accommodations
-                  - meal.dietary_accommodation.each do |acc|
-                    %small= acc.name
+          .card.meal-card
+            = image_tag('tiffin_cover.jpg', class: 'card-img-top')
+            .card-body
+              %h5.card-title= meal.short_name
+              %p.card-text= meal.description
+              .meal-cuisines
+                - meal.cuisine.each do |cuisine|
+                  %small= cuisine.name
+              .meal-accommodations
+                - meal.dietary_accommodation.each do |acc|
+                  %small= acc.name

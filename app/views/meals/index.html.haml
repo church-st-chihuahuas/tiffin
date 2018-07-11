@@ -1,22 +1,15 @@
 .container.page-content
-  %table
-    %tr
-      %th
-        Name
-      %th
-        Description
-      %th
-        Actions
-
+  .row
     - @meals.each do | meal |
-      %tr
-        %td
-          = link_to meal.short_name, meal_path(meal)
-        %td
-          = meal.description
-        %td
-          = link_to 'Edit', edit_meal_path(meal), class: 'btn btn-default'
-          %br
-          = link_to 'Delete', meal_path(meal), {method: :delete, confirm: 'Are you sure?', class: 'btn btn-default'}
-
-  = link_to 'Add', new_chef_meal_path(), class: 'btn btn-default'
+      .card.meal-card
+        = image_tag('tiffin_cover.jpg', class: 'card-img-top')
+        .card-body
+          %h3.card-title
+            = link_to meal.short_name, meal_path(meal)
+          %p.card-text
+            = meal.description
+        .card-body
+          %p
+            = link_to 'Edit', edit_meal_path(meal), class: 'btn btn-primary'
+            = link_to 'Delete', meal_path(meal), {method: :delete, confirm: 'Are you sure?', class: 'btn btn-primary'}
+  = link_to 'Add New Meal', new_chef_meal_path(), class: 'btn btn-primary'
