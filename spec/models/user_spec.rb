@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe User do
 
-  let(:user) {FactoryBot.create(:user)}
+  let(:user) {FactoryBot.create(:user, street_address: '500 Massachusetts Ave.', city: 'Cambridge', state: 'MA', zip_code: '02139')}
   subject {user}
 
   describe 'associations' do
@@ -41,5 +41,13 @@ describe User do
   describe '#full_name' do
     subject {user.full_name}
     it { is_expected.to eq("#{user.first_name} #{user.last_name}")}
+  end
+
+  describe '#distance_to' do
+    let(:other_user) {FactoryBot.create(:user, street_address: '1001 Massachusetts Ave.', city: 'Cambridge', state: 'MA', zip_code: '02138', first_name: 'John', last_name: 'Smith', email: 'john@example.com', password: 'security', password_confirmation: 'security')}
+    subject {user.distance_to(other_user)}
+    it {
+      is_expected.to be_within(0.1).of(0.6)
+    }
   end
 end
