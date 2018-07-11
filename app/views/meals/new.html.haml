@@ -1,18 +1,8 @@
 
 .container.page-content
   %h2 Create New Meal
-  
-  = form_for(:meal, url: chef_meals_path) do |form|
-    %div.form-group
-      = form.label :short_name, class: :required
-      = form.text_field :short_name, class: 'focus form-control'
-    %div.form-group
-      = form.label :description, class: :required
-      = form.text_field :description, class: 'form-control'
-    %div.form-group
-      = form.collection_check_boxes(:cuisine_ids, Cuisine.all, :id, :name) do |cuisine|
-        .cuisine
-          = cuisine.check_box
-          = cuisine.label
-    %div.form-group
-      = form.submit 'Create Meal', class: 'btn btn-primary btn-block'
+
+  .row.justify-content-center
+    .col
+      = form_for(:meal, url: chef_meals_path) do |form|
+        = render 'meals/meal_form', form: form, button_text: 'Create Meal'

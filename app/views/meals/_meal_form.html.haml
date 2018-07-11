@@ -1,0 +1,21 @@
+.form-group
+  = form.label :short_name, class: :required
+  = form.text_field :short_name, class: 'focus form-control'
+.form-group
+  = form.label :description, class: :required
+  = form.text_field :description, class: 'form-control'
+.form-row
+  .form-group.col
+    %strong Cuisines
+    = form.collection_check_boxes(:cuisine_ids, Cuisine.all, :id, :name) do |cuisine|
+      .cuisine
+        = cuisine.check_box
+        = cuisine.label
+  .form-group.col
+    %strong Dietary Accommodations
+    = form.collection_check_boxes(:dietary_accommodation_ids, DietaryAccommodation.all, :id, :name) do |acc|
+      .accommodation
+        = acc.check_box
+        = acc.label
+%div.form-group
+  = form.submit button_text, class: 'btn btn-primary btn-block'

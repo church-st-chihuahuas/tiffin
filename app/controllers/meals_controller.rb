@@ -11,9 +11,9 @@ class MealsController < ApplicationController
   end
 
   def create
-    @meal = Meal.new(meals_params) { |meal| meal.chef = @chef }
+    @meal = Meal.new(meal_params) { |meal| meal.chef = @chef }
     if @meal.save
-      redirect_to chef_meals_path(chef), notice: 'Meal created successfully'
+      redirect_to chef_meals_path(@chef), notice: 'Meal created successfully'
     else
       #validation errors
       render 'new'
@@ -32,9 +32,10 @@ class MealsController < ApplicationController
 
   def update
     @meal = Meal.find_by(id: params[:id])
+    @chef = @meal.chef
     raise ActiveRecord::RecordNotFound unless @meal
-    if @meal.update(meals_params)
-      redirect_to chef_meals_path(chef), notice: 'Meal updated successfully'
+    if @meal.update(meal_params)
+      redirect_to chef_meals_path(@chef), notice: 'Meal updated successfully'
     else
       #validation errors
       render 'new'
@@ -54,7 +55,8 @@ class MealsController < ApplicationController
 
   def meal_params
     params.require(:meal)
-        .permit(:short_name, :description)
+        .permit(:short_name, :description, cuisine_ids: [],
+                dietary_accommodation_ids: [])
   end
 
   private

@@ -1,1 +1,7 @@
-Edit Meal
+.container.page-content
+  %h2 Edit Meal
+
+  .row.justify-content-center
+    .col
+      = form_for(:meal, url: meal_path, method: :put) do |form|
+        = render 'meals/meal_form', form: form, button_text: 'Update Meal'
