@@ -10,7 +10,7 @@ describe Chef do
     it {is_expected.to have_many(:meals)}
     it {is_expected.to have_and_belong_to_many(:certification)}
     it {is_expected.to have_and_belong_to_many(:dietary_accommodation)}
-    it {is_expected.to have_and_belong_to_many(:cuisine)}
+    it {is_expected.to have_and_belong_to_many(:cuisines)}
 
   end
 

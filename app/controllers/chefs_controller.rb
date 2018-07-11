@@ -8,7 +8,7 @@ class ChefsController < ApplicationController
     return unless keys
 
     like_array = keys.map do |key|
-      "description LIKE '%#{key}%'"
+      "meals.description LIKE '%#{key}%'"
     end
     like_string = like_array.join(' OR ')
 

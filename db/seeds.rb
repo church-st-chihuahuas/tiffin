@@ -54,8 +54,8 @@ Cuisine.create([{name: 'Indian'}, {name: 'Chinese'}, {name: 'Mexican'}, {name: '
 Chef.create({user_id: User.find_by_email('rubius@hogwarts.edu').id,
               business_name: "Hagrid's Hot Dog Hut",
               business_description: "We make hot dogs out of all the magical beasts you can imagine!"}) do |chef|
-  chef.cuisine << Cuisine.find_by_name('Indian')
-  chef.cuisine << Cuisine.find_by_name('Middle Eastern')
+  chef.cuisines << Cuisine.find_by_name('Indian')
+  chef.cuisines << Cuisine.find_by_name('Middle Eastern')
   chef.dietary_accommodation << DietaryAccommodation.find_by_name('vegetarian')
   chef.dietary_accommodation << DietaryAccommodation.find_by_name('kosher')
   chef.certification << Certification.find_by_authority('OK')
@@ -67,33 +67,33 @@ Chef.create([{user_id: User.find_by_email('severus@hogwarts.edu').id,
              {user_id: User.find_by_email('kerry@tiffin.com').id,
               business_name: "Kerry's Kitchen",
               business_description: "We serve up healthy meals for a variety of tastes and diets.",
-              cuisine: [Cuisine.first, Cuisine.second, Cuisine.third]},
+              cuisines: [Cuisine.first, Cuisine.second, Cuisine.third]},
              {user_id: User.find_by_email('luna@hogwarts.edu').id,
               business_name: "Luna's Moon Pies",
               business_description: "Loony moon pies filled with wonder.",
-              cuisine: [Cuisine.first, Cuisine.second, Cuisine.third]},
+              cuisines: [Cuisine.first, Cuisine.second, Cuisine.third]},
              {user_id: User.find_by_email('neville@hogwarts.edu').id,
               business_name: "Neville's Nosherei",
               business_description: "Your home for kosher delights.",
-              cuisine: [Cuisine.first, Cuisine.second, Cuisine.third]},
+              cuisines: [Cuisine.first, Cuisine.second, Cuisine.third]},
              {user_id: User.find_by_email('jack@abby.com').id,
               business_name: "Jack's Abby Craft Lagers",
               business_description: "Craft lagers for the discerning palate."},
-              cuisine: [Cuisine.first, Cuisine.second, Cuisine.third]])
+              cuisines: [Cuisine.first, Cuisine.second, Cuisine.third]])
 
 Meal.create([{chef: Chef.first, short_name: 'Chana Masala', description: 'Chickpeas in Masala sauce.'}]) do |meal|
-  meal.cuisine << Cuisine.find_by_name('Indian')
+  meal.cuisines << Cuisine.find_by_name('Indian')
   meal.dietary_accommodation << DietaryAccommodation.find_by_name('vegetarian')
 end
 
 Meal.create([{chef: Chef.first, short_name: 'Tofu Tacos',
               description: 'Tofu Tacos just like at Pancho Villa in the Mission.'}]) do |meal|
-  meal.cuisine << Cuisine.find_by_name('Mexican')
+  meal.cuisines << Cuisine.find_by_name('Mexican')
   meal.dietary_accommodation << DietaryAccommodation.find_by_name('vegetarian')
 end
 
 Meal.create([{chef: Chef.first, short_name: 'Matzoh Ball Soup',
               description: 'Matzoh ball soup, perfect for Passover.  Mazel Tov!'}]) do |meal|
-  meal.cuisine << Cuisine.find_by_name('Middle Eastern')
+  meal.cuisines << Cuisine.find_by_name('Middle Eastern')
   meal.dietary_accommodation << DietaryAccommodation.find_by_name('kosher')
 end

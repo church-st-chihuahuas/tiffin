@@ -53,8 +53,8 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'shoulda', '~> 3.5'
   gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
-  gem 'database_cleaner', '~> 1.6', '>= 1.6.1'
   gem 'cucumber-rails', '~> 1.5', require: false
+  gem 'database_cleaner', '~> 1.6', '>= 1.6.1'
 end
 
 group :development do
