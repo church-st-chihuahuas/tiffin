@@ -4,6 +4,6 @@ FactoryBot.define do
     short_name
     description 'Deliciousness!'
     price { rand(0.0..100.0) }
-    active [true, false].sample
+    active true
   end
 end

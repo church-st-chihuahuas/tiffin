@@ -48,21 +48,24 @@
 
   .row
     - @chef.meals.each do |meal|
-      .card.meal-card
-        = image_tag('tiffin_cover.jpg', class: 'card-img-top')
-        .card-body
-          %h4.card-title= meal.short_name
-          %p.card-text= meal.description
-        %ul.list-group.list-group-flush
-          .list-group-item
-            %h5
-              Cuisine
-            - meal.cuisines.each do |cuisine|
-              .meal-card__enumerable
-                = cuisine.name
-          .list-group-item
-            %h5
-              Dietary Accomodations
-            - meal.dietary_accommodations.each do |acc|
-              .meal-card__enumerable
-                = acc.name
+      - if meal.active?
+        .card.meal-card
+          = image_tag('tiffin_cover.jpg', class: 'card-img-top')
+          .card-body
+            %h4.card-title= meal.short_name
+            .price
+              = "$#{meal.price.to_d.truncate(2).to_f}"
+            %p.card-text= meal.description
+          %ul.list-group.list-group-flush
+            .list-group-item
+              %h5
+                Cuisine
+              - meal.cuisines.each do |cuisine|
+                .meal-card__enumerable
+                  = cuisine.name
+            .list-group-item
+              %h5
+                Dietary Accomodations
+              - meal.dietary_accommodations.each do |acc|
+                .meal-card__enumerable
+                  = acc.name

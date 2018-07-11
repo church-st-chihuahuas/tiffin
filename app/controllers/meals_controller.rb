@@ -55,7 +55,8 @@ class MealsController < ApplicationController
 
   def meal_params
     params.require(:meal)
-        .permit(:short_name, :description, cuisine_ids: [],
+        .permit(:short_name, :description, :price, :active,
+                cuisine_ids: [],
                 dietary_accommodation_ids: [])
   end
 

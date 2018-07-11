@@ -4,6 +4,16 @@
 .form-group
   = form.label :description, class: :required
   = form.text_field :description, class: 'form-control'
+.form-group
+  = form.label :price, class: :required
+  = form.text_field :price, class: 'form-control'
+.form-group
+  %strong Should this meal be visible to customers?
+  %br
+  = form.label 'active_true', 'Yes'
+  = form.radio_button :active, true
+  = form.label 'active_false', 'No'
+  = form.radio_button :active, false
 .form-row
   .form-group.col
     %strong Cuisines
