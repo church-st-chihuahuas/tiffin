@@ -14,6 +14,8 @@ describe Meal do
   describe 'validations' do
     it { is_expected.to validate_presence_of(:short_name) }
     it { is_expected.to validate_presence_of(:description) }
+    it { is_expected.to validate_presence_of(:price) }
+    it { is_expected.to validate_presence_of(:active) }
   end
 
 
