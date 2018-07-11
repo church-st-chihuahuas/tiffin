@@ -7,4 +7,4 @@
   .row.justify-content-center
     .col
       = form_for :chef, url: user_chefs_path(@chef.user), method: :put do |form|
-        = render 'chefs/chef_form', form: form
+        = render 'chefs/chef_form', form: form, button_text: 'Update Profile'
