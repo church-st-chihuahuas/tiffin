@@ -5,7 +5,7 @@
         = @chef.user.full_name
     .col
       - if @chef.user == current_user
-        = link_to 'Edit Profile', edit_user_chefs_path(@chef), class: 'btn btn-primary'
+        = link_to 'Edit Profile', edit_user_chefs_path(@chef.user), class: 'btn btn-primary'
   .row
     .col.business
 
