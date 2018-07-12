@@ -261,7 +261,7 @@ July 9:
 
 - Christopher - [Last 24] Finished search page for chefs, [Next 24], Finish tests for chef login, Start on chef's repertoire [Impediments] None;
 
-- Santiago - [Last 24], [Next 24], [Impediments];
+- Santiago - [Last 24] mob programmed chef meals list, routes, and initial links to show, edit, and delete, [Next 24] continued mob programming chef meals pages, [Impediments]None;
 
 July 10:
 
@@ -275,7 +275,7 @@ July 10:
 
 - Christopher - [Last 24] Worked on chef's repertoire, [Next 24] Work on meal creation and tests, [Impediments] No impediments;
 
-- Santiago - [Last 24], [Next 24], [Impediments];
+- Santiago - [Last 24] Mob-programmed the checkboxes and mob-refactored chef's associations; also implemented the edit chef form and controller actions implementation, [Next 24] fix bugs if any, [Impediments] Inadvertently introduced a bug with the to_i method on longitude; BTW, the bug was fixt by the team;
 
 July 11:
 
@@ -289,7 +289,7 @@ July 11:
 
 - Christopher - [Last 24] Mob programmed on meal edit and creation, made style changes and added all meal info, added tests to improve code coverage, fixed distance bug, [Next 24] Prepare for sprint review and finish any pending items, walk through application, check for bugs, start outline for tomorrow's review [Impediments] None;
 
-- Santiago - [Last 24], [Next 24], [Impediments];
+- Santiago - [Last 24] helped fix bugs and help briefly with meal form, [Next 24] sprint planning and prepare for presentations, [Impediments] None;
 
 Forecast of Velocity: 39 Story Points per Sprint
 
