@@ -255,7 +255,9 @@ July 9:
             [Next 24] sprint planning, sprint retrospective, break down sprint plan into smaller stories;
             [Impediments] Lack of sleep
 
-- Samir -   [Last 24], [Next 24] [Impediments] ;
+- Samir -   [Last 24] Used geocoded data to write distance method on user model; sprint review with stakeholder
+            [Next 24] Use distance function to display distance to chefs in search results
+            [Impediments] Time constraints, coming up with enough real addresses for geocoding;
 
 - Eric -    [Last 24],  [Next 24], [Impediments] ;
 
@@ -269,7 +271,9 @@ July 10:
             [Next 24] Help fix search, work on updating cuisine, certifications, accommodations, experience, seed data;
             [Impediments] Cannot test search by distance because it only returns one chef; 
 
-- Samir -   [Last 24], [Next 24] [Impediments] ;
+- Samir -   [Last 24] Displayed distance to chefs in search results; Implemented search radius; identified bug in search query
+            [Next 24] Work on story allowing chef attributes to be edited upon chef creation or from profile
+            [Impediments] N/A 
 
 - Eric -    [Last 24],  [Next 24], [Impediments] ;
 
@@ -283,7 +287,9 @@ July 11:
             [Next 24] Rehearse sprint review; Finish sprint review stakeholder presentation;
             [Impediments] None; 
 
-- Samir - [Last 24], [Next 24] [Impediments] ;
+- Samir - [Last 24] Moved chef and meal forms into partials for reuse in new/update views; formatted cuisine options into columns; fixed meal creation/update logic in controller; make sure all users are authenticated upon signup; added price and active attributes to meal model and put into forms
+          [Next 24] Bug fixes and style tweaks
+          [Impediments] N/A
 
 - Eric - [Last 24],  [Next 24], [Impediments] ;
 
