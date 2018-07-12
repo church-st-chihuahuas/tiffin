@@ -259,7 +259,9 @@ July 9:
             [Next 24] Use distance function to display distance to chefs in search results
             [Impediments] Time constraints, coming up with enough real addresses for geocoding;
 
-- Eric -    [Last 24],  [Next 24], [Impediments] ;
+- Eric -    [Last 24] daily scrum, mobbed on stories, conducted sprint review 
+            [Next 24] continue mobbing, finish sprint stories, conduct retrospective
+            [Impediments] none;
 
 - Christopher - [Last 24] Finished search page for chefs, [Next 24], Finish tests for chef login, Start on chef's repertoire [Impediments] None;
 
@@ -275,7 +277,9 @@ July 10:
             [Next 24] Work on story allowing chef attributes to be edited upon chef creation or from profile
             [Impediments] N/A 
 
-- Eric -    [Last 24],  [Next 24], [Impediments] ;
+- Eric -    [Last 24] continue mobbing, finish sprint stories, conduct retrospective, 
+            [Next 24] add cumber test, continued mob programming, 
+            [Impediments] none;
 
 - Christopher - [Last 24] Worked on chef's repertoire, [Next 24] Work on meal creation and tests, [Impediments] No impediments;
 
@@ -291,7 +295,9 @@ July 11:
           [Next 24] Bug fixes and style tweaks
           [Impediments] N/A
 
-- Eric - [Last 24],  [Next 24], [Impediments] ;
+- Eric - [Last 24] added cucumber test,  participated in mob programming
+         [Next 24] participated in mob programming, planning for project presentation, sprint review with stakeholder and class
+         [Impediments] none;
 
 - Christopher - [Last 24] Mob programmed on meal edit and creation, made style changes and added all meal info, added tests to improve code coverage, fixed distance bug, [Next 24] Prepare for sprint review and finish any pending items, walk through application, check for bugs, start outline for tomorrow's review [Impediments] None;
 
@@ -312,6 +318,7 @@ Sprint Burndown Chart: https://docs.google.com/spreadsheets/d/1C81sI4wgc7uKNamSN
 Evidence of CI/CD: 
 
 [Screenshot of CI](CI.png)
+
 [Screenshot of CD](CD.png)
 
 Badges are clickable
