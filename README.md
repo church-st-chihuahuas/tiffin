@@ -259,7 +259,7 @@ July 9:
 
 - Eric -    [Last 24],  [Next 24], [Impediments] ;
 
-- Christopher - [Last 24], [Next 24], [Impediments];
+- Christopher - [Last 24] Finished search page for chefs, [Next 24], Finish tests for chef login, Start on chef's repertoire [Impediments] None;
 
 - Santiago - [Last 24], [Next 24], [Impediments];
 
@@ -273,7 +273,7 @@ July 10:
 
 - Eric -    [Last 24],  [Next 24], [Impediments] ;
 
-- Christopher - [Last 24], [Next 24], [Impediments];
+- Christopher - [Last 24] Worked on chef's repertoire, [Next 24] Work on meal creation and tests, [Impediments] No impediments;
 
 - Santiago - [Last 24], [Next 24], [Impediments];
 
@@ -287,7 +287,7 @@ July 11:
 
 - Eric - [Last 24],  [Next 24], [Impediments] ;
 
-- Christopher - [Last 24], [Next 24], [Impediments];
+- Christopher - [Last 24] Mob programmed on meal edit and creation, made style changes and added all meal info, added tests to improve code coverage, fixed distance bug, [Next 24] Prepare for sprint review and finish any pending items, walk through application, check for bugs, start outline for tomorrow's review [Impediments] None;
 
 - Santiago - [Last 24], [Next 24], [Impediments];
 
